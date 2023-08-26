@@ -2,6 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Figtree } from 'next/font/google'
 import NavBar from '@/components/NavBar'
+import Box from '@/components/Box'
 const font = Figtree({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -17,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={font.className}>
-        <NavBar/>
+        <Box/>
         {children}
         </body>
     </html>
