@@ -13,16 +13,6 @@ const NavBar = () => {
     ]
 
     return(
-<<<<<<< HEAD
-        <div className="w-full bg-black rounded-md border p-3 flex flex-rows">
-            <div>
-
-            </div>
-            <div className=" flex flex-col flex-grow justify-center text-center text-white my-auto">
-                <h1 className="w-full tracking-wide text-4xl font-serif text-blue-500 font-semibold">UCSC <span className="tracking-widest text-amber-400 font-light opacity-100">[AI]</span></h1>
-            </div>
-            <div className="flex-none">
-=======
         <div className="w-full bg-neutral-500 rounded-md border border-gray-500 border-opacity-25 flex flex-rows h-fit  p-2">
         
             <div className="h-full justify-center text-center text-white my-auto px-2">
@@ -36,7 +26,6 @@ const NavBar = () => {
             }
             </div>
             <div className="flex-none px-2">
->>>>>>> origin/main
                 <Image className="inset-y-0 right-0" width={150} height={100} src="/baskin.png" alt="baskin">    
                 </Image>
             </div>
