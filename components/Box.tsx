@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import {RiPresentationFill} from 'react-icons/ri'
 import {BiSolidVideoRecording} from 'react-icons/bi'
+
 const Box = () => {
 
  

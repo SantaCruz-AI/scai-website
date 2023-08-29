@@ -13,15 +13,15 @@ const NavBar = () => {
     ]
 
     return(
-        <div className="w-full bg-neutral-500 rounded-md border border-gray-500 border-opacity-25 flex flex-rows h-fit  p-2">
+        <div className="w-full bg-neutral-500 rounded-xl border border-gray-500 border-opacity-25 flex flex-rows h-fit  p-2">
         
             <div className="h-full justify-center text-center text-white my-auto px-2">
-                <h1 className="w-full opacity-80 tracking-wide text-4xl font-serif font-semibold">UCSC <Link href={"/"} className="tracking-widest text-amber-400 font-light opacity-80 hover:opacity-100">[AI]</Link></h1>
+                <h1 className="w-full opacity-100 tracking-wide text-4xl font-serif font-semibold">UCSC <Link href={"/"} className="tracking-widest text-amber-400 font-light opacity-95 hover:opacity-100">[AI]</Link></h1>
             </div>
             <div className="flex-grow flex flex-row gap-4 px-4">
             {
                 links.map((value) => (
-                    <Link href={"/"+value.toLocaleLowerCase()} className="text-center my-auto text-lg text-white font-serif hover:text-amber-400 hover:opacity-100 tracking-wider opacity-75">{value}</Link>
+                    <Link href={"/"+value.toLocaleLowerCase()} className="text-center my-auto text-lg text-white font-serif hover:text-amber-400 hover:opacity-100 tracking-wider ">{value}</Link>
                 ))
             }
             </div>
