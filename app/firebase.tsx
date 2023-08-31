@@ -1,6 +1,8 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection, doc, getDoc, addDoc, setDoc } from "firebase/firestore";
+import { sendEmail } from "./nodemailer";
+
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -20,19 +22,20 @@ const firebaseConfig = {
 export const app = initializeApp(firebaseConfig);
 const firestore = getFirestore(app);
 
+
 export const newsLetterSignUp = async (email :string) => {
     try {
         
         const docRef = doc(firestore, 'subscribers', email); 
         const docSnap = await getDoc(docRef);
-
+        
         if (docSnap.exists()) {
             console.log("Email already exisits: ");
         } else {
             console.log("Email needs to be added to firestore"); 
             const docRes = await setDoc(doc(firestore, "subscribers", email), {});
             console.log(docRes);
-           
+            await sendEmail("News letter confirmation.", "asdfkja;slk fjaslkdfj asldfjasdkf", email);
         }
 
     } catch(error) {
