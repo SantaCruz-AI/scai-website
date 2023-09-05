@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <div className="text-white">
+    <div className="text-white absolute w-screen">
       <div
         className="... backdrop-filter backdrop-blur-lg bg-opacity-30 
      border-b sticky top-0 z-[20] flex items-center w-full px-5 py-5 justify-between
