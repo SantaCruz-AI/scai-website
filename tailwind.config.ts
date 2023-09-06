@@ -7,15 +7,7 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
-      fontFamily: {
-        montserrat: ["Montserrat", "sans"],
-      },
-      fontWeight: {
-        normal: "400",
-        bold: "700",
-      },
-    },
+    extend: {},
     screens: {
       md: "900px",
     },

@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
+import Background from "./Background";
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -13,15 +14,14 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <div className="text-white">
+    <div className="text-[#00BFFF] sticky top-0 z-[30]">
       <div
         className="... backdrop-filter backdrop-blur-lg bg-opacity-30 
-     border-b sticky top-0 z-[20] flex items-center w-full px-5 py-5 justify-between
-     fixed"
+  border-b flex items-center w-full px-5 py-5 justify-between"
       >
         <div className="flex items-center">
           <img src="scailogo.png" alt="" className="h-[50px] pr-3" />
-          <h1 className="font-montserrat font-bold text-4xl">SCAI.</h1>
+          <h1 className="font-montserrat font-extrabold text-4xl">SCAI.</h1>
         </div>
 
         <div className="hidden md:flex items-center w-full">
@@ -37,20 +37,14 @@ const Navbar: React.FC = () => {
           </div>
 
           <div className="flex px-5 h-10 space-x-3">
-            <Link href="https://discord.gg/santacruzai" target="blank">
-              <img src="discord.png" alt="Discord Server" />
+            <Link href="https://discord.gg/santacruzai">
+              <img src="/discord.png" alt="Discord Server" />
             </Link>
-            <Link
-              href="https://instagram.com/ucscai?igshid=MzRlODBiNWFlZA=="
-              target="blank"
-            >
-              <img src="instagram.png" alt="Instagram Page" />
+            <Link href="https://instagram.com/ucscai?igshid=MzRlODBiNWFlZA==">
+              <img src="/instagram.png" alt="Instagram Page" />
             </Link>
-            <Link
-              href="https://www.linkedin.com/company/santa-cruz-artificial-intelligence/"
-              target="blank"
-            >
-              <img src="linkedin.png" alt="UCSC AI Club Linkedin Profile" />
+            <Link href="https://www.linkedin.com/company/santa-cruz-artificial-intelligence/">
+              <img src="/linkedin.png" alt="UCSC AI Club Linkedin Profile" />
             </Link>
           </div>
         </div>
@@ -61,8 +55,9 @@ const Navbar: React.FC = () => {
           </button>
         </div>
       </div>
+
       <div
-        className={`fixed top-0 right-0 h-full w-64 bg-blue-200  ${
+        className={`fixed top-0 right-0 h-full w-64 bg-blue-200 rounded-l-3xl  ${
           isOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300 ease-in-out z-30`}
       >
@@ -81,25 +76,19 @@ const Navbar: React.FC = () => {
           <li>Officers</li>
           <div className="flex flex-col items-center space-y-5">
             <li>
-              <Link href="https://discord.gg/santacruzai" target="blank">
+              <Link href="https://discord.gg/santacruzai">
                 <img src="discord.png" alt="Discord Server" />
               </Link>
             </li>
             <li>
               {" "}
-              <Link
-                href="https://instagram.com/ucscai?igshid=MzRlODBiNWFlZA=="
-                target="blank"
-              >
+              <Link href="https://instagram.com/ucscai?igshid=MzRlODBiNWFlZA==">
                 <img src="instagram.png" alt="Instagram Page" />
               </Link>
             </li>
             <li>
               {" "}
-              <Link
-                href="https://www.linkedin.com/company/santa-cruz-artificial-intelligence/"
-                target="blank"
-              >
+              <Link href="https://www.linkedin.com/company/santa-cruz-artificial-intelligence/">
                 <img src="linkedin.png" alt="UCSC AI Club Linkedin Profile" />
               </Link>
             </li>
