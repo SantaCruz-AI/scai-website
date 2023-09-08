@@ -30,7 +30,7 @@ export default function RootLayout({
           <div className=" pt-28 flex flex-row absolute w-screen h-5/6 bg-[url('/scai-header.jpg')]">
             <div className="w-1/2 h-full flex justify-center">
               <div className="text-center my-auto h-fit pb-36">
-                <h1 className="text-5xl text-blue-700 font-bold">Welcom To UCSC AI Club </h1>
+                <h1 className="text-5xl text-blue-700 font-bold">Welcome To UCSC AI Club </h1>
                 <h2 className="text-2xl text-white">a;lskdfj asdl;kfjasd;lkf dkfjdkfj dfkj </h2>
               </div>
             </div>
