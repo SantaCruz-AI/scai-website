@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div>
       <Background />
-      {/* <Box /> */}
+      <Box />
     </div>
   );
 }

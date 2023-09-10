@@ -1,6 +1,6 @@
 const Background = () => {
   return (
-    <div className="flex h-[600px] relative z-10">
+    <div className="flex h-[800px] relative z-10">
       <img
         src="scai-header-crop.jpg"
         alt="UCSC Aerial View"
