@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
+
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -13,10 +14,10 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <div className="text-white absolute w-screen">
+    <div className="text-white sticky top-0 z-[20] absolute w-screen">
       <div
         className="... backdrop-filter backdrop-blur-lg bg-opacity-30 
-     border-b sticky top-0 z-[20] flex items-center w-full px-5 py-5 justify-between
+     border-b  flex items-center w-full px-5 py-5 justify-between
      fixed"
       >
         <div className="flex items-center">

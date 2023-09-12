@@ -55,7 +55,7 @@ const Bulb =  (props:any) => {
 
     useFrame((state, delta) => {
         ref.current.children[0].children[3].rotation.y += (delta/4);
-        //ref.current.children[0].children[2].rotation.y -= (delta/5);
+        ref.current.children[0].children[2].rotation.y -= (delta/5);
     });
 
     useEffect(() => {
