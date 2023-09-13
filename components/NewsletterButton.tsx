@@ -8,6 +8,23 @@ interface Modal {
 }
 
 const MyModal:FC<Modal> = (props) => {
+    const [email, setEmail] = useState('');
+
+    const makeApiCall = async () => {
+        const response = await fetch('/api/example', {
+            method: 'POST',
+            body: JSON.stringify({ email: email}),
+        });
+
+        const body = await response.json(); 
+    }
+
+    const handleSubmit = async (event:any) => {
+        event.preventDefault();
+        makeApiCall();
+        setEmail("");
+    }
+
     if (!props.visible) return null;
 
     return (
@@ -19,12 +36,12 @@ const MyModal:FC<Modal> = (props) => {
                 <h1 className=" text-2xl">SCAI Newsletter</h1>
                 <p>Stay up to date with the latest club activitys. </p>
                 <p>(We don't spam!)</p>
-                
-                <div className="w-full mt-6">
-                    <p hidden={true}>dfkdjf;akl</p>
-                    <input id="email" type="text" className="border m-1 p-1 rounded-lg" placeholder="exmaple@email.utu"></input>
-                    <button className="rounded-lg bg-yellow-300 w-fit h-full p-1">Submit</button>
-                </div>
+               
+
+                <form className="w-full mt-6" onSubmit={handleSubmit}>
+                    <input required id="email" type="text" onChange={(e) => setEmail(e.target.value)} value={email} className="border m-1 p-1 rounded-lg" placeholder="exmaple@email.utu"></input>
+                    <button type="submit" className="rounded-lg bg-yellow-300 w-fit h-full p-1 hover:border border-neutral-700">Submit</button>
+                </form>
                 
             </div>
         </div>

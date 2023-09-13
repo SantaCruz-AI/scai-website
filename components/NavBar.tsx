@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <div className="text-white sticky top-0 z-[20] absolute w-screen">
+    <div className="text-white top-0 z-[20] absolute w-screen">
       <div
         className="... backdrop-filter backdrop-blur-lg bg-opacity-30 
      border-b  flex items-center w-full px-5 py-5 justify-between

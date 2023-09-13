@@ -11,7 +11,7 @@ const Background = () => {
           className="inset-0 object-cover w-full h-full absolute z-0"
         />
 
-        <div className="flex flex-row justify-center gap-4 bg-red-500 bg-opacity-50 pt-28 pb-20 px-4 h-full w-full z-10">
+        <div className="flex flex-row justify-center gap-4 bg-opacity-50 pt-28 pb-20 px-4 h-full w-full z-10">
           <div className="w-full h-full rounded-lg">
             <div className=" flex flex-col justify-center gap-4 m-auto w-fit h-fit">
               <h1 className="text-5xl font-bold text-white">Our <span className="text-blue-500">Mission.</span></h1>
