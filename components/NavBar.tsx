@@ -28,9 +28,7 @@ const Navbar: React.FC = () => {
           <div className=" w-full flex space-x-10 font-montserrat justify-center">
             <h1 className="hover:text-amber-400 hover:opacity-100">Home</h1>
             <h1 className="hover:text-amber-400 hover:opacity-100">Schedule</h1>
-            <h1 className="hover:text-amber-400 hover:opacity-100">
-              Newsletter
-            </h1>
+
             <h1 className="hover:text-amber-400 hover:opacity-100">Contact</h1>
             <h1 className="hover:text-amber-400 hover:opacity-100">Projects</h1>
             <h1 className="hover:text-amber-400 hover:opacity-100">Officers</h1>

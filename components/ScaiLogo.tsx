@@ -61,8 +61,8 @@ const Bulb = (props: any) => {
   glassLogo["material"].needsUpdate = true;
 
   useFrame((state, delta) => {
-    ref.current.children[0].children[3].rotation.y += delta / 4;
-    //ref.current.children[0].children[2].rotation.y -= (delta/5);
+    ref.current.children[0].children[3].rotation.y += delta / 2;
+    ref.current.children[0].children[2].rotation.y -= delta / 3;
   });
 
   useEffect(() => {
@@ -91,7 +91,7 @@ const ScaiLogo = () => {
       <Canvas camera={{ position: [0, 0, 6] }}>
         <ambientLight intensity={1} />
         <Bulb />
-        <Stats />
+        {/* <Stats /> */}
         <OrbitControls />
       </Canvas>
     </div>
