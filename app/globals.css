@@ -2,8 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "montlight";
+  src: url("/fonts/Mont-ExtraLightDEMO.woff");
+}
+@font-face {
+  font-family: "montheavy";
+  src: url("/fonts/Montserrat-ExtraBold.ttf");
+}
 html,
 body,
-:root{
+:root {
   height: 100%;
 }

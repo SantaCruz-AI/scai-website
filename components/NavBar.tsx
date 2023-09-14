@@ -1,36 +1,193 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import { useState, useEffect } from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { IoMdClose } from "react-icons/io";
+import {
+  AiFillHome,
+  AiFillSchedule,
+  AiFillContacts,
+  AiFillLinkedin,
+  AiFillInstagram,
+} from "react-icons/ai";
+import { BiCodeAlt } from "react-icons/bi";
+import { FaPeopleGroup } from "react-icons/fa6";
+import { BsDiscord, BsInstagram, BsLinkedin } from "react-icons/bs";
+import { MdKeyboardArrowRight } from "react-icons/md";
 
-const NavBar = () => {
+import {
+  Card,
+  Typography,
+  List,
+  ListItem,
+  ListItemPrefix,
+  ListItemSuffix,
+  Chip,
+} from "@material-tailwind/react";
 
-    const links = [
-        "Home", 
-        "Schedule",
-        "Members",
-        "Contact",
-        "Projects/SCAI", 
-        "Join+",
-    ]
+const Navbar: React.FC = () => {
+  const [isOpen, setIsOpen] = useState(false);
 
-    return(
-        <div className="w-full bg-neutral-500 rounded-xl border border-gray-500 border-opacity-25 flex flex-rows h-fit  p-2">
-        
-            <div className="h-full justify-center text-center text-white my-auto px-2">
-                <h1 className="w-full opacity-100 tracking-wide text-4xl font-serif font-semibold">UCSC <Link href={"/"} className="tracking-widest text-amber-400 font-light opacity-95 hover:opacity-100">[AI]</Link></h1>
-            </div>
-            <div className="flex-grow flex flex-row gap-4 px-4">
-            {
-                links.map((value) => (
-                    <Link href={"/"+value.toLocaleLowerCase()} className="text-center my-auto text-lg text-white font-serif hover:text-amber-400 hover:opacity-100 tracking-wider ">{value}</Link>
-                ))
-            }
-            </div>
-            <div className="flex-none px-2">
-                <Image className="inset-y-0 right-0" width={150} height={100} src="/baskin.png" alt="baskin">    
-                </Image>
-            </div>
+  const toggleNavbar = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <div className="text-white sticky top-0 z-[20] absolute w-screen">
+      <div
+        className="... backdrop-filter backdrop-blur-lg bg-opacity-30 
+     border-b  flex items-center w-full px-5 py-5 justify-between
+     fixed"
+      >
+        <div className="flex items-center">
+          <img src="scailogo.png" alt="" className="h-[50px] pr-3" />
+          <h1 className="font-montserrat font-bold text-4xl">SCAI.</h1>
         </div>
-    )
-}
 
-export default NavBar;
+        <div className="hidden md:flex items-center w-full">
+          <div className=" w-full flex space-x-10 font-montserrat justify-center">
+            <h1 className="hover:text-amber-400 hover:opacity-100">Home</h1>
+            <h1 className="hover:text-amber-400 hover:opacity-100">Schedule</h1>
+
+            <h1 className="hover:text-amber-400 hover:opacity-100">Contact</h1>
+            <h1 className="hover:text-amber-400 hover:opacity-100">Projects</h1>
+            <h1 className="hover:text-amber-400 hover:opacity-100">Officers</h1>
+          </div>
+
+          <div className="flex px-5 h-10 space-x-3">
+            <Link href="https://discord.gg/santacruzai" target="blank">
+              <img src="discord.png" alt="Discord Server" />
+            </Link>
+            <Link
+              href="https://instagram.com/ucscai?igshid=MzRlODBiNWFlZA=="
+              target="blank"
+            >
+              <img src="instagram.png" alt="Instagram Page" />
+            </Link>
+            <Link
+              href="https://www.linkedin.com/company/santa-cruz-artificial-intelligence/"
+              target="blank"
+            >
+              <img src="linkedin.png" alt="UCSC AI Club Linkedin Profile" />
+            </Link>
+          </div>
+        </div>
+
+        <div className="md:hidden text-4xl">
+          <button>
+            <GiHamburgerMenu onClick={toggleNavbar} />
+          </button>
+        </div>
+      </div>
+
+      <div
+        className={`fixed top-0 right-0 bg-white h-full max-w-[20rem] shadow-xl shadow-blue-gray-900/5 transition-transform duration-300 ease-in-out z-30 ${
+          isOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        <button
+          onClick={toggleNavbar}
+          className="text-4xl absolute top-6 right-4 "
+        >
+          <IoMdClose className="text-black" />
+        </button>
+
+        <div className="h-[calc(100vh-2rem)] p-4">
+          <div className="mb-2 p-4">
+            <Typography variant="h5" color="blue-gray">
+              <h1 className=" font-bold bg-gradient-to-r from-pink-400 to-purple-500 bg-clip-text text-transparent">
+                Santa Cruz AI
+              </h1>
+            </Typography>
+          </div>
+
+          <List>
+            <ListItem>
+              <ListItemPrefix>
+                <AiFillHome className="h-5 w-5" />
+              </ListItemPrefix>
+              Home
+            </ListItem>
+            <ListItem>
+              <ListItemPrefix>
+                <AiFillSchedule className="h-5 w-5" />
+              </ListItemPrefix>
+              Schedule
+            </ListItem>
+            <ListItem>
+              <ListItemPrefix>
+                <AiFillContacts className="h-5 w-5" />
+              </ListItemPrefix>
+              Contact
+            </ListItem>
+            <ListItem>
+              <ListItemPrefix>
+                <BiCodeAlt className="h-5 w-5" />
+              </ListItemPrefix>
+              Projects
+            </ListItem>
+            <ListItem>
+              <ListItemPrefix>
+                <FaPeopleGroup className="h-5 w-5" />
+              </ListItemPrefix>
+              Officers
+            </ListItem>
+
+            <div className="pt-10">
+              <ListItem className="flex items-center">
+                <ListItemPrefix>
+                  <Link
+                    href="https://discord.gg/santacruzai"
+                    target="blank"
+                    className="w-8 "
+                  >
+                    <img src="discord.png" alt="Discord Server" />
+                  </Link>
+                </ListItemPrefix>
+                <span className="mr-2">Discord</span>
+                <MdKeyboardArrowRight />
+              </ListItem>
+
+              <ListItem className="flex items-center">
+                <ListItemPrefix>
+                  <Link
+                    href="https://instagram.com/ucscai?igshid=MzRlODBiNWFlZA=="
+                    target="blank"
+                  >
+                    <img
+                      src="instagram.png"
+                      alt="Instagram Page"
+                      className="w-8"
+                    />
+                  </Link>
+                </ListItemPrefix>
+                <span className="mr-2">Instagram</span>
+                <MdKeyboardArrowRight />
+              </ListItem>
+
+              <ListItem className="flex items-center">
+                <ListItemPrefix>
+                  <Link
+                    href="https://www.linkedin.com/company/santa-cruz-artificial-intelligence/"
+                    target="blank"
+                  >
+                    <img
+                      src="linkedin.png"
+                      alt="UCSC AI Club Linkedin Profile"
+                      className="w-8"
+                    />
+                  </Link>
+                </ListItemPrefix>
+                <span className="mr-2">Linkedin</span>
+                <MdKeyboardArrowRight />
+              </ListItem>
+            </div>
+          </List>
+        </div>
+      </div>
+    </div>
+  );
+};
+export default Navbar;
