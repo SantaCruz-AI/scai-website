@@ -2,6 +2,12 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
+import dynamic from "next/dynamic";
+
+const ScaiLogoDynamic = dynamic(() => import("./ScaiLogo"), {
+  ssr: false,
+});
+
 import {
   useGLTF,
   Stats,
@@ -87,12 +93,12 @@ const ScaiLogo = () => {
   //<pointLight intensity={10} position={[0, 5, 5]} />
   const envMap = useEnvironment({ path: "/envMap" });
   return (
-    <div className="w-[600px] h-[600px] m-auto">
+    <div className="w-[250px] h-[250px] md:w-[600px] md:h-[600px]  m-auto">
       <Canvas camera={{ position: [0, 0, 6] }}>
         <ambientLight intensity={1} />
         <Bulb />
         {/* <Stats /> */}
-        <OrbitControls />
+        {/* <OrbitControls /> */}
       </Canvas>
     </div>
   );

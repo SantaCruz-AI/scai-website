@@ -7,33 +7,29 @@ import Image from "next/image";
 import Background from "@/components/Background";
 import ScaiLogo from "@/components/ScaiLogo";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import NewsletterButton from "@/components/NewsletterButton";
 export default function Home() {
   return (
     <div>
       <div className=" h-screen relative">
         <Background />
 
-        <div className="pt-[140px] flex flex-row justify-center w-full items-center absolute top-0 z-11">
-          <div className="flex flex-col  items-start text-white">
-            <h1 className="pb-5  font-semibold text-6xl ">
+        <div className="pt-[140px] flex-col md:flex md:flex-row  justify-center w-full items-center absolute top-0 z-11">
+          <div className=" sm:order-1 md:order-2">
+            <ScaiLogo />
+          </div>
+          <div className="flex flex-col md:items-start px-10 items-center text-white sm:order-2 md:order-1">
+            <h1 className="pb-5  font-semibold md:text-6xl text-4xl">
               Welcome to <span className=" text-[#004BD1]">SCAI</span>
             </h1>
-            <div className="sans text-[#93989D] flex max-w-md gap-4 font-semi pb-5">
+            <div className="sans text-[#93989D] md:text-base text-sm flex max-w-md gap-4 font-semi pb-5">
               <h1>
                 UCSC's leading AI Club to discover Machine Learning & Artificial
                 Intelligence through engaging lectures, projects, and expert
                 talks.{" "}
               </h1>
             </div>
-            <button className="bg-white hover:bg-gray-100 rounded-full text-gray-800 font-semibold py-2 px-4 border border-gray-400 shadow">
-              <h1 className="flex items-center">
-                Newsletter
-                <MdKeyboardArrowRight className="ml-2" />
-              </h1>
-            </button>
-          </div>
-          <div className="">
-            <ScaiLogo />
+            <NewsletterButton />
           </div>
         </div>
         <Box />

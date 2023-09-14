@@ -5,6 +5,28 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
+import {
+  AiFillHome,
+  AiFillSchedule,
+  AiFillContacts,
+  AiFillLinkedin,
+  AiFillInstagram,
+} from "react-icons/ai";
+import { BiCodeAlt } from "react-icons/bi";
+import { FaPeopleGroup } from "react-icons/fa6";
+import { BsDiscord, BsInstagram, BsLinkedin } from "react-icons/bs";
+import { MdKeyboardArrowRight } from "react-icons/md";
+
+import {
+  Card,
+  Typography,
+  List,
+  ListItem,
+  ListItemPrefix,
+  ListItemSuffix,
+  Chip,
+} from "@material-tailwind/react";
+
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -59,50 +81,111 @@ const Navbar: React.FC = () => {
           </button>
         </div>
       </div>
+
       <div
-        className={`fixed top-0 right-0 h-full w-64 bg-blue-200  ${
+        className={`fixed top-0 right-0 bg-white h-full max-w-[20rem] shadow-xl shadow-blue-gray-900/5 transition-transform duration-300 ease-in-out z-30 ${
           isOpen ? "translate-x-0" : "translate-x-full"
-        } transition-transform duration-300 ease-in-out z-30`}
+        }`}
       >
         <button
           onClick={toggleNavbar}
-          className="text-4xl absolute top-6 right-4"
+          className="text-4xl absolute top-6 right-4 "
         >
-          <IoMdClose />
+          <IoMdClose className="text-black" />
         </button>
-        <ul className=" flex flex-col text-center pt-[80px] font-montserrat space-y-5 ">
-          <li>Home</li>
-          <li>Schedule</li>
-          <li>Newsletter</li>
-          <li>Contact</li>
-          <li>Projects</li>
-          <li>Officers</li>
-          <div className="flex flex-col items-center space-y-5">
-            <li>
-              <Link href="https://discord.gg/santacruzai" target="blank">
-                <img src="discord.png" alt="Discord Server" />
-              </Link>
-            </li>
-            <li>
-              {" "}
-              <Link
-                href="https://instagram.com/ucscai?igshid=MzRlODBiNWFlZA=="
-                target="blank"
-              >
-                <img src="instagram.png" alt="Instagram Page" />
-              </Link>
-            </li>
-            <li>
-              {" "}
-              <Link
-                href="https://www.linkedin.com/company/santa-cruz-artificial-intelligence/"
-                target="blank"
-              >
-                <img src="linkedin.png" alt="UCSC AI Club Linkedin Profile" />
-              </Link>
-            </li>
+
+        <div className="h-[calc(100vh-2rem)] p-4">
+          <div className="mb-2 p-4">
+            <Typography variant="h5" color="blue-gray">
+              <h1 className=" font-bold bg-gradient-to-r from-pink-400 to-purple-500 bg-clip-text text-transparent">
+                Santa Cruz AI
+              </h1>
+            </Typography>
           </div>
-        </ul>
+
+          <List>
+            <ListItem>
+              <ListItemPrefix>
+                <AiFillHome className="h-5 w-5" />
+              </ListItemPrefix>
+              Home
+            </ListItem>
+            <ListItem>
+              <ListItemPrefix>
+                <AiFillSchedule className="h-5 w-5" />
+              </ListItemPrefix>
+              Schedule
+            </ListItem>
+            <ListItem>
+              <ListItemPrefix>
+                <AiFillContacts className="h-5 w-5" />
+              </ListItemPrefix>
+              Contact
+            </ListItem>
+            <ListItem>
+              <ListItemPrefix>
+                <BiCodeAlt className="h-5 w-5" />
+              </ListItemPrefix>
+              Projects
+            </ListItem>
+            <ListItem>
+              <ListItemPrefix>
+                <FaPeopleGroup className="h-5 w-5" />
+              </ListItemPrefix>
+              Officers
+            </ListItem>
+
+            <div className="pt-10">
+              <ListItem className="flex items-center">
+                <ListItemPrefix>
+                  <Link
+                    href="https://discord.gg/santacruzai"
+                    target="blank"
+                    className="w-8 "
+                  >
+                    <img src="discord.png" alt="Discord Server" />
+                  </Link>
+                </ListItemPrefix>
+                <span className="mr-2">Discord</span>
+                <MdKeyboardArrowRight />
+              </ListItem>
+
+              <ListItem className="flex items-center">
+                <ListItemPrefix>
+                  <Link
+                    href="https://instagram.com/ucscai?igshid=MzRlODBiNWFlZA=="
+                    target="blank"
+                  >
+                    <img
+                      src="instagram.png"
+                      alt="Instagram Page"
+                      className="w-8"
+                    />
+                  </Link>
+                </ListItemPrefix>
+                <span className="mr-2">Instagram</span>
+                <MdKeyboardArrowRight />
+              </ListItem>
+
+              <ListItem className="flex items-center">
+                <ListItemPrefix>
+                  <Link
+                    href="https://www.linkedin.com/company/santa-cruz-artificial-intelligence/"
+                    target="blank"
+                  >
+                    <img
+                      src="linkedin.png"
+                      alt="UCSC AI Club Linkedin Profile"
+                      className="w-8"
+                    />
+                  </Link>
+                </ListItemPrefix>
+                <span className="mr-2">Linkedin</span>
+                <MdKeyboardArrowRight />
+              </ListItem>
+            </div>
+          </List>
+        </div>
       </div>
     </div>
   );
