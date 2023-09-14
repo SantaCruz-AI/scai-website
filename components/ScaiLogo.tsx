@@ -1,22 +1,11 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
-import { Canvas, useFrame, useThree } from "@react-three/fiber";
-import dynamic from "next/dynamic";
-
-const ScaiLogoDynamic = dynamic(() => import("./ScaiLogo"), {
-  ssr: false,
-});
-
-import {
-  useGLTF,
-  Stats,
-  OrbitControls,
-  useCubeTexture,
-} from "@react-three/drei";
-import { useEnvironment } from "@react-three/drei";
+import { useEffect, useRef, useState } from "react";
+import { Canvas, useFrame } from "@react-three/fiber";
+import { useGLTF, useCubeTexture, useEnvironment, OrbitControls } from "@react-three/drei";
 import * as THREE from "three";
 
+/*
 const Bulb = (props: any) => {
   const ref: any = useRef();
 
@@ -71,10 +60,6 @@ const Bulb = (props: any) => {
     ref.current.children[0].children[2].rotation.y -= delta / 3;
   });
 
-  useEffect(() => {
-    console.log(ref.current);
-  }, []);
-
   return (
     <>
       <primitive
@@ -86,23 +71,21 @@ const Bulb = (props: any) => {
     </>
   );
 };
+*/
 
 const ScaiLogo = () => {
-  const [active, activate] = useState(false);
 
-  //<pointLight intensity={10} position={[0, 5, 5]} />
-  const envMap = useEnvironment({ path: "/envMap" });
+  //const envMap = useEnvironment({ path: "/envMap" });
+
   return (
     <div className="w-[250px] h-[250px] md:w-[600px] md:h-[600px]  m-auto">
       <Canvas camera={{ position: [0, 0, 6] }}>
-        <ambientLight intensity={1} />
-        <Bulb />
-        {/* <Stats /> */}
-        {/* <OrbitControls /> */}
+        <ambientLight intensity={3} color={""} />
+        {/*<Bulb /> 
+        <OrbitControls enableZoom={false} /> */}
       </Canvas>
     </div>
   );
 };
 
-//useGLTF.preload('/models/temp.glb');
 export default ScaiLogo;

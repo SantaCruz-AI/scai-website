@@ -1,13 +1,10 @@
-"use client";
-import { Button } from "@material-tailwind/react";
+
 
 import Box from "@/components/Box";
-import { useEffect, useState } from "react";
-import Image from "next/image";
 import Background from "@/components/Background";
 import ScaiLogo from "@/components/ScaiLogo";
-import { MdKeyboardArrowRight } from "react-icons/md";
 import NewsletterButton from "@/components/NewsletterButton";
+
 export default function Home() {
   return (
     <div>
@@ -32,7 +29,8 @@ export default function Home() {
             <NewsletterButton />
           </div>
         </div>
-        <Box />
+
+        
       </div>
     </div>
   );
