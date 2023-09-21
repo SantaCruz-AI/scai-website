@@ -96,11 +96,9 @@ const Navbar: React.FC = () => {
 
         <div className="h-[calc(100vh-2rem)] p-4">
           <div className="mb-2 p-4">
-            <Typography variant="h5" color="blue-gray">
-              <h1 className=" font-bold bg-gradient-to-r from-pink-400 to-purple-500 bg-clip-text text-transparent">
-                Santa Cruz AI
-              </h1>
-            </Typography>
+            <h1 className=" font-bold bg-gradient-to-r from-pink-400 to-purple-500 bg-clip-text text-transparent">
+              Santa Cruz AI
+            </h1>
           </div>
 
           <List>

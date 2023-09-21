@@ -2,10 +2,14 @@
 
 import { useEffect, useRef, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { useGLTF, useCubeTexture, useEnvironment, OrbitControls } from "@react-three/drei";
+import {
+  useGLTF,
+  useCubeTexture,
+  useEnvironment,
+  OrbitControls,
+} from "@react-three/drei";
 import * as THREE from "three";
 
-/*
 const Bulb = (props: any) => {
   const ref: any = useRef();
 
@@ -71,18 +75,16 @@ const Bulb = (props: any) => {
     </>
   );
 };
-*/
 
 const ScaiLogo = () => {
-
   //const envMap = useEnvironment({ path: "/envMap" });
 
   return (
     <div className="w-[250px] h-[250px] md:w-[600px] md:h-[600px]  m-auto">
       <Canvas camera={{ position: [0, 0, 6] }}>
         <ambientLight intensity={3} color={""} />
-        {/*<Bulb /> 
-        <OrbitControls enableZoom={false} /> */}
+        <Bulb />
+        <OrbitControls enableZoom={false} />
       </Canvas>
     </div>
   );
