@@ -11,7 +11,7 @@ const Officers = () => {
       <h1 className="bg-gradient-to-b from-blue-100 via-blue-300 to-blue-500 bg-clip-text text-transparent  text-center mt-10 font-semibold text-6xl ">
         Officers
       </h1>
-      <div className="flex flex-wrap gap-20 justify-center max-w-[1400px] mx-auto">
+      <div className="flex flex-wrap gap-20 justify-center max-w-[1200px] mx-auto">
         <ProfileCard
           profileImage="profilePics/rahul.jpeg"
           name="Rahul Nadkarni"
