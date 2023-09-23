@@ -3,11 +3,12 @@ import Background from "@/components/Background";
 import ScaiLogo from "@/components/ScaiLogo";
 import NewsletterButton from "@/components/NewsletterButton";
 import Officers from "@/components/Officers";
+import CustomTimeline from "@/components/CustomTimeline";
 
 export default function Home() {
   return (
     <div>
-      <div className=" h-screen relative">
+      <div className="h-screen relative">
         <Background />
 
         <div className="pt-[140px] flex-col md:flex md:flex-row  justify-center w-full items-center absolute top-0 z-11">
@@ -31,6 +32,7 @@ export default function Home() {
             <NewsletterButton />
           </div>
         </div>
+        <CustomTimeline />
         <Officers />
       </div>
     </div>
