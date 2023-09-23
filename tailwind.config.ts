@@ -8,7 +8,23 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        text: 'text s5s ease infinite',
+      }
+    },
+    keyframes: {
+      text: {
+        '0%, 100%': {
+          'background-size': '200% 200%',
+          'background-position': 'left center',
+        },
+        '50%': {
+          'background-size': '200% 200%',
+          'background-position': 'right center',
+        },
+      }
+    },
     screens: {
       md: "900px",
     },

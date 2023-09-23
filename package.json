@@ -12,6 +12,7 @@
     "@heroicons/react": "^2.0.18",
     "@mailchimp/mailchimp_marketing": "^3.0.80",
     "@material-tailwind/react": "^2.1.1",
+    "@react-google-maps/api": "^2.19.2",
     "@react-three/drei": "^9.83.9",
     "@react-three/fiber": "^8.14.1",
     "@types/node": "20.5.6",

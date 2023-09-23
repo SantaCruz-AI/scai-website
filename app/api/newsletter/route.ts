@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import mailchimp from "@/service/mailchimp";
 
 const md5 = require("md5")
-const listID = '599479ed32';
+const listID = 'e35023e932';
 
 export async function POST(request: Request) {
     const { email } = await request.json();

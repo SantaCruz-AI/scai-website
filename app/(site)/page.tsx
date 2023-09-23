@@ -1,11 +1,16 @@
 
+import {ImCancelCircle} from "react-icons/im"
 
 import Box from "@/components/Box";
 import Background from "@/components/Background";
 import ScaiLogo from "@/components/ScaiLogo";
 import NewsletterButton from "@/components/NewsletterButton";
+import CustomTimeline from "@/components/CustomTimeline";
+import Footer from "@/components/Footer";
 
 export default function Home() {
+  
+
   return (
     <div>
       <div className=" h-screen relative">
@@ -30,8 +35,11 @@ export default function Home() {
           </div>
         </div>
 
-        
+        <CustomTimeline/>
+
+        <div className="bg-gray-900 w-full h-36"></div>
       </div>
+      
     </div>
   );
 }
