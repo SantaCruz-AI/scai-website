@@ -7,63 +7,63 @@ const CustomTimeline = () => {
 
   const events = [
     {
-      title: "Spring Quarter Info Night + GANS",
-      speaker: "Oliver",
-      date: "4/4/23",
+      title: "Fall Quarter Info Night",
+      speaker: "The entire SCAI team!",
+      date: "10/3/23",
       link: ""
     },
     {
-      title: "Decision Trees",
-      speaker: "Oliver",
-      date: "4/4/23",
+      title: "What is AI/ML?",
+      speaker: "Coen Adler",
+      date: "10/10/23",
       link: ""
     },
     {
-      title: "Diffusion",
-      speaker: "Oliver",
-      date: "4/4/23",
+      title: "Stock Market Prediction",
+      speaker: "Rahul Nadkarni",
+      date: "10/17/23",
       link: ""
     },
     {
-      title: "Computer Vision",
-      speaker: "Oliver",
-      date: "4/4/23",
+      title: "Sentiment Analysis",
+      speaker: "Andrew Kato",
+      date: "10/24/23",
       link: ""
     },
     {
-      title: "Autonomous Vehicles",
-      speaker: "Oliver",
-      date: "4/4/23",
+      title: "SCAI Jam",
+      speaker: "TBH",
+      date: "11/4/23",
       link: ""
     },
     {
-      title: "AI Safety",
-      speaker: "Oliver",
-      date: "4/4/23",
+      title: "Decision Tree Classifier",
+      speaker: "Coen Adler",
+      date: "11/7/23",
       link: ""
     },
     {
-      title: "Responsible Data Science",
-      speaker: "Oliver",
-      date: "4/4/23",
+      title: "Recommendation Algorithms",
+      speaker: "Coen Adler",
+      date: "11/14/23",
       link: ""
     },
     {
-      title: "Nautilus",
-      speaker: "Oliver",
-      date: "4/4/23",
+      title: "Thanksgiving",
+      speaker: "",
+      date: "11/21/23",
       link: ""
     },
     {
-      title: "SCAI is No Limit Workshop",
-      speaker: "Oliver",
-      date: "4/4/23",
+      title: "Basic Neural Networks",
+      speaker: "Jonathan Vengosh",
+      date: "11/28/23",
       link: ""
     },
     {
-      title: "SCAI is No Limit Competition",
-      speaker: "Oliver",
-      date: "4/4/23",
+      title: "SCAI is No Limit",
+      speaker: "Rahul Nadkarni, Jonathan Vengosh, Coen Adler",
+      date: "12/3/23",
       link: ""
     },
   ]
@@ -77,24 +77,23 @@ const CustomTimeline = () => {
   const center = useMemo(() => ({  lat: 37.00092417331319, lng:-122.0625463702481 }), []);
 
   return (
-    <div className="w-full py-2 px-20">
-          <h1 className="text-6xl font-bold text-blue-400 py-5 ">Stay up to <span className="text-yellow-300">Date:</span></h1>
-          <p className="text-blue-400 text-l font-semibold">Time: Tuesdays 6-7pm</p>
-          <p className="text-md text-blue-400 font-semibold">(Click on the cards to be direct to the recording)</p>
-          <h1 className="mt-2 text-yellow-300 text-6xl font-semibold">Fall 2023:</h1>
-          <div className="w-full flex justify-center py-10 gap-2">
-            <div className="w-1/2 flex">
-              <div className="flex flex-wrap justify-center gap-4 m-auto">
+    <div className="w-full py-2 px-3 md:px-20">
+          <h1 className="text-6xl font-bold  bg-gradient-to-b from-green-300 via-blue-500 to-purple-600 bg-clip-text text-transparent py-5 ">Fall Schedule</h1>
+          <p className="text-white text-xl font-semibold">Tuesdays 6-7pm</p>
+          <p className="text-md text-[#6a717f]">(Click on the cards to be direct to the recording)</p>
+          <div className="w-full flex flex-col md:flex-row justify-center py-10 gap-2">
+            <div className="w-full md:w-1/2 flex">
+              <div className="flex flex-wrap justify-center md:justify-start gap-4 m-auto">
               {events.map((event, i) => {
                 if (i == active) {
                   return (
                     <Link href={event.link}>
-                      <div className="p-1 text-white relative w-[150px] h-[200px] rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 ">
-                      <h1 className="text-5xl  p-1 text-yellow-300">{i}</h1>
-                      <div className=" flex flex-col gap-4">
+                      <div className="p-1 text-white relative w-[140px] h-[200px] rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 ">
+                      <h1 className="text-5xl  p-1 text-yellow-300">{i+1}</h1>
+                      <div className=" flex flex-col gap-1">
                         <div>
                           <h3 className="text-sm">Title-</h3>
-                          <p className="ml-1 text-xs">{event.title}</p>
+                          <p className="ml-1 text-xs ">{event.title}</p>
                         </div>
                         <div>
                           <h3 className="text-sm">Speaker-</h3>
@@ -108,10 +107,9 @@ const CustomTimeline = () => {
                   )
                 } else {
                   return (
-                    <Link href={event.link}>
-                      <div className="p-1 border border-gray-700 text-white relative w-[150px] h-[200px] rounded-lg hover:bg-gradient-to-r from-cyan-500 to-blue-500 transition duration-300 ease-in-out">
-                        <h1 className="text-5xl  p-1 text-yellow-300">{i}</h1>
-                        <div className=" flex flex-col gap-4">
+                      <div className="p-1 border border-gray-700 text-white relative w-[140px] h-[200px] rounded-lg hover:bg-gradient-to-r from-cyan-500 to-blue-500 transition duration-300 ease-in-out">
+                        <h1 className="text-5xl  p-1 text-yellow-300">{i+1}</h1>
+                        <div className=" flex flex-col gap-1">
                           <div>
                             <h3 className="text-sm">Title-</h3>
                             <p className="ml-1 text-xs">{event.title}</p>
@@ -123,15 +121,14 @@ const CustomTimeline = () => {
                           
                         </div>
                         <p className=" p-1 absolute bottom-0 left-0 text-xs font-semibold">{event.date}</p>
-                      </div>
-                    </Link>
+                    </div>
                   ) 
                 }      
               })}
               </div>
               
             </div>
-            <div className="w-1/2 flex justify-center">
+            <div className=" w-full mt-5 md:mt-0 md:w-1/2 flex justify-center">
             {!isLoaded ? (
                 <h1>Loading...</h1>
               ) : (
