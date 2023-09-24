@@ -79,8 +79,8 @@ const CustomTimeline = () => {
   );
 
   return (
-    <div className="w-full py-2 px-3 md:px-20">
-      <h1 className="text-6xl font-bold  bg-gradient-to-b from-green-300 via-blue-500 to-purple-600 bg-clip-text text-transparent py-5 ">
+    <div className="w-full text-center py-2 px-3 md:px-20">
+      <h1 className=" text-6xl font-bold  bg-gradient-to-b from-green-300 via-blue-500 to-purple-600 bg-clip-text text-transparent py-5 ">
         Fall Schedule
       </h1>
       <p className="text-white text-xl font-semibold">Tuesdays 6-7pm</p>

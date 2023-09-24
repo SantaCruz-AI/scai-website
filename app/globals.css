@@ -16,3 +16,9 @@ body,
   height: 100%;
   background-color: #141414;
 }
+.map {
+  height: 450px;
+  width: 750px;
+  border: 2px solid #333;
+  border-radius: 10px;
+}

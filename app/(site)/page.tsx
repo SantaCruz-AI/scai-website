@@ -8,7 +8,7 @@ import CustomTimeline from "@/components/CustomTimeline";
 export default function Home() {
   return (
     <div>
-      <div className="h-screen relative">
+      <div className="relative">
         <Background />
 
         <div className="pt-[140px] flex-col md:flex md:flex-row  justify-center w-full items-center absolute top-0 z-11">
