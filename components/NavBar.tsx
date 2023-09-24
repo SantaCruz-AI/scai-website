@@ -27,12 +27,26 @@ import {
   Chip,
 } from "@material-tailwind/react";
 
-const Navbar: React.FC = () => {
+const Navbar: React.FC = (props:any) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Smooth scroll animation
+    });
+  };
+
+  const scrollToSection = (sectionRef:any) => {
+    window.scrollTo({
+      top: sectionRef.current.offsetTop-70,
+      behavior: 'smooth',
+    });
+  }
 
   return (
     <div className="text-white sticky top-0 z-[20] absolute w-screen">
@@ -48,12 +62,10 @@ const Navbar: React.FC = () => {
 
         <div className="hidden md:flex items-center w-full">
           <div className=" w-full flex space-x-10 font-montserrat justify-center">
-            <h1 className="hover:text-amber-400 hover:opacity-100">Home</h1>
-            <h1 className="hover:text-amber-400 hover:opacity-100">Schedule</h1>
-
-            <h1 className="hover:text-amber-400 hover:opacity-100">Contact</h1>
+            <h1 onClick={scrollToTop} className="hover:text-amber-400 hover:opacity-100">Home</h1>
+            <h1 onClick={() => {scrollToSection(props.scheduleRef)}} className="hover:text-amber-400 hover:opacity-100">Schedule</h1>
             <h1 className="hover:text-amber-400 hover:opacity-100">Projects</h1>
-            <h1 className="hover:text-amber-400 hover:opacity-100">Officers</h1>
+            <h1 onClick={() => {scrollToSection(props.officersRef)}} className="hover:text-amber-400 hover:opacity-100">Officers</h1>
           </div>
 
           <div className="flex px-5 h-10 space-x-3">
@@ -102,7 +114,7 @@ const Navbar: React.FC = () => {
           </div>
 
           <List>
-            <ListItem>
+            <ListItem onClick={scrollToTop}>
               <ListItemPrefix>
                 <AiFillHome className="h-5 w-5" />
               </ListItemPrefix>

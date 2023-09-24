@@ -5,7 +5,7 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { useGLTF, useCubeTexture, useEnvironment, OrbitControls } from "@react-three/drei";
 import * as THREE from "three";
 
-/*
+
 const Bulb = (props: any) => {
   const ref: any = useRef();
 
@@ -21,20 +21,20 @@ const Bulb = (props: any) => {
   const glassLogo: any = bulb.scene.getObjectByName("Circle001");
 
   const glassMaterial = new THREE.MeshPhysicalMaterial({
-    color: new THREE.Color(0xffea00),
-    emissive: new THREE.Color(0xffea00),
-    emissiveIntensity: 0.3,
+    color: new THREE.Color(0xfbff00),
+    emissive: new THREE.Color(0xfbff00),
+    emissiveIntensity: 0.2,
     roughness: 0.1,
-    metalness: 0.4,
+    metalness: 0.3,
     transmission: 1,
-    thickness: 0.3,
+    thickness: 0.4,
     envMap: texture,
     side: 0,
   });
-
+  // 4287f5, 0044b0 
   const blueMaterial = new THREE.MeshPhysicalMaterial({
-    color: new THREE.Color(0x0062ff),
-    emissive: new THREE.Color(0x0062ff),
+    color: new THREE.Color(0x4287f5),
+    emissive: new THREE.Color(0x4287f5),
     emissiveIntensity: 0.6,
     roughness: 0.2,
     metalness: 1,
@@ -71,7 +71,7 @@ const Bulb = (props: any) => {
     </>
   );
 };
-*/
+
 
 const ScaiLogo = () => {
 
@@ -81,8 +81,8 @@ const ScaiLogo = () => {
     <div className="w-[250px] h-[250px] md:w-[600px] md:h-[600px]  m-auto">
       <Canvas camera={{ position: [0, 0, 6] }}>
         <ambientLight intensity={3} color={""} />
-        {/*<Bulb /> 
-        <OrbitControls enableZoom={false} /> */}
+        <Bulb /> 
+        <OrbitControls enableZoom={false} />
       </Canvas>
     </div>
   );

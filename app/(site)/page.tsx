@@ -1,18 +1,24 @@
-
+"use client"
 import {ImCancelCircle} from "react-icons/im"
-
+import { useRef } from "react";
 import Box from "@/components/Box";
 import Background from "@/components/Background";
 import ScaiLogo from "@/components/ScaiLogo";
 import NewsletterButton from "@/components/NewsletterButton";
 import CustomTimeline from "@/components/CustomTimeline";
 import Footer from "@/components/Footer";
+import Navbar from "@/components/NavBar";
 
 export default function Home() {
   
+  const schedule = useRef(null);
+  const officers = useRef(null); 
+  const home = useRef(null); 
+
 
   return (
     <div>
+      <Navbar scheduleRef={schedule} officersRef={officers}/>
       <div className=" h-screen relative">
         <Background />
 
@@ -35,7 +41,7 @@ export default function Home() {
           </div>
         </div>
 
-        <CustomTimeline/>
+        <CustomTimeline forwardRef={schedule} />
 
         <div className="bg-gray-900 w-full h-36"></div>
       </div>

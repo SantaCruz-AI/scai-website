@@ -19,7 +19,6 @@ export default function RootLayout({
     <html lang="en" className=" bg-gray-900">
       <body className={montserrat.className}>
         <div>
-          <NavBar />
           {children}
         </div>
       </body>
