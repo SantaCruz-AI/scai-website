@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import { Montserrat } from "next/font/google";
 const montserrat = Montserrat({ subsets: ["latin"] });
 
+
 export const metadata: Metadata = {
   title: "UCSC Artificial Intelligence",
   description: "SCAI Club",
@@ -20,6 +21,7 @@ export default function RootLayout({
       <body className={montserrat.className}>
         <div>
           {children}
+          <Footer/>
         </div>
       </body>
     </html>

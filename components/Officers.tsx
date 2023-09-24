@@ -5,10 +5,10 @@ import { BsLinkedin } from "react-icons/bs";
 import ProfileCard from "./ProfileCard";
 import Head from "next/head";
 
-const Officers = () => {
+const Officers = (props:any) => {
   return (
-    <div>
-      <h1 className="bg-gradient-to-b from-blue-100 via-blue-300 to-blue-500 bg-clip-text text-transparent  text-center mt-10 font-semibold text-6xl ">
+    <div ref={props.forwardRef}>
+      <h1 className="bg-gradient-to-b from-blue-100 via-blue-300 to-blue-500 bg-clip-text text-transparent text-center  px-3 md:px-20 mt-10 font-semibold text-6xl ">
         Officers
       </h1>
       <div className="flex flex-wrap gap-20 justify-center max-w-[1300px] mx-auto">

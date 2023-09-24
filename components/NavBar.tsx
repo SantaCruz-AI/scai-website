@@ -43,7 +43,7 @@ const Navbar: React.FC = (props:any) => {
 
   const scrollToSection = (sectionRef:any) => {
     window.scrollTo({
-      top: sectionRef.current.offsetTop-70,
+      top: sectionRef.current.offsetTop-95,
       behavior: 'smooth',
     });
   }
@@ -61,11 +61,11 @@ const Navbar: React.FC = (props:any) => {
         </div>
 
         <div className="hidden md:flex items-center w-full">
-          <div className=" w-full flex space-x-10 font-montserrat justify-center">
-            <h1 onClick={scrollToTop} className="hover:text-amber-400 hover:opacity-100">Home</h1>
-            <h1 onClick={() => {scrollToSection(props.scheduleRef)}} className="hover:text-amber-400 hover:opacity-100">Schedule</h1>
-            <h1 className="hover:text-amber-400 hover:opacity-100">Projects</h1>
-            <h1 onClick={() => {scrollToSection(props.officersRef)}} className="hover:text-amber-400 hover:opacity-100">Officers</h1>
+          <div className=" pl-11 w-full flex space-x-10 font-montserrat justify-center">
+            <h1 onClick={scrollToTop} className="cursor-pointer hover:text-amber-400 hover:opacity-100">Home</h1>
+            <h1 onClick={() => {scrollToSection(props.scheduleRef)}} className="cursor-pointer first-line:hover:text-amber-400 hover:opacity-100">Schedule</h1>
+            {/* <h1 className="hover:text-amber-400 hover:opacity-100">Projects</h1> */}
+            <h1 onClick={() => {scrollToSection(props.officersRef)}} className="cursor-pointer hover:text-amber-400 hover:opacity-100">Officers</h1>
           </div>
 
           <div className="flex px-5 h-10 space-x-3">
@@ -120,25 +120,19 @@ const Navbar: React.FC = (props:any) => {
               </ListItemPrefix>
               Home
             </ListItem>
-            <ListItem>
+            <ListItem onClick={() => {scrollToSection(props.scheduleRef)}}>
               <ListItemPrefix>
                 <AiFillSchedule className="h-5 w-5" />
               </ListItemPrefix>
               Schedule
             </ListItem>
-            <ListItem>
-              <ListItemPrefix>
-                <AiFillContacts className="h-5 w-5" />
-              </ListItemPrefix>
-              Contact
-            </ListItem>
-            <ListItem>
+            {/* <ListItem>
               <ListItemPrefix>
                 <BiCodeAlt className="h-5 w-5" />
               </ListItemPrefix>
               Projects
-            </ListItem>
-            <ListItem>
+            </ListItem> */}
+            <ListItem onClick={() => {scrollToSection(props.officersRef)}}>
               <ListItemPrefix>
                 <FaPeopleGroup className="h-5 w-5" />
               </ListItemPrefix>
