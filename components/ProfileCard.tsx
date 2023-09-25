@@ -25,19 +25,19 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
 }) => {
   return (
     <div className={nunito.className}>
-      <div className="flex flex-wrap gap-20 justify-center m-10  ">
+      <div className="flex flex-wrap gap-20 justify-center md:m-10 m-5 ">
         <div className="flex flex-col items-center text-white">
           <img
-            className="w-60 rounded-full object-cover"
+            className="md:w-60 w-40 rounded-full object-cover"
             src={profileImage}
             alt={name}
           />
 
-          <h1 className="pt-5 font-semibold text-2xl">{name}</h1>
-          <div className="h-[4rem] py-2 flex items-center justify-center">
+          <h1 className="pt-5 font-semibold  md:text-2xl text-lg">{name}</h1>
+          <div className="h-[4rem] py-3 flex items-center justify-center">
             {" "}
             {/* Fixed height and flexbox for vertical centering */}
-            <h1 className="text-[#6A717F] text-xl max-w-[200px] text-center">
+            <h1 className="text-[#6A717F] md:text-xl text-md md:max-w-[200px] max-w-[100px] text-center">
               {role}
             </h1>
           </div>
