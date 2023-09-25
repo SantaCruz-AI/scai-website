@@ -23,7 +23,7 @@ export default function Home() {
           <div className=" sm:order-1 md:order-2">
             <ScaiLogo />
           </div>
-          <div className="flex flex-col md:items-start px-10 items-center text-white sm:order-2 md:order-1">
+          <div className="flex flex-col md:items-start px-10 items-center md:text-left text-center text-white sm:order-2 md:order-1">
             <h1 className="pb-5  font-semibold md:text-6xl text-4xl">
               Welcome to{" "}
               <span className="bg-gradient-to-b from-pink-500 via-red-500 to-yellow-500 bg-clip-text text-transparent">

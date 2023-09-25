@@ -119,21 +119,23 @@ const CustomTimeline = (props: any) => {
 
   return (
     <div ref={props.forwardRef} className="w-full py-2 px-3 md:px-20">
-      <h1 className="text-6xl font-bold  bg-gradient-to-b from-green-300 via-blue-500 to-purple-600 bg-clip-text text-transparent py-5 ">
+      <h1 className="text-6xl font-bold md:text-left text-center  bg-gradient-to-b from-green-300 via-blue-500 to-purple-600 bg-clip-text text-transparent py-5 ">
         Fall Schedule
       </h1>
-      <p className="text-white text-xl font-semibold">Tuesdays 6-7pm</p>
-      <p className="text-md text-[#6a717f]">
+      <p className="text-white md:text-left text-center text-xl font-semibold">
+        Tuesdays 6-7pm
+      </p>
+      <p className="text-md md:text-left text-center text-[#6a717f]">
         (Click on the cards to be direct to the recording)
       </p>
-      <div className="flex gap-0.5 text-sm text-[#6a717f]">
-        <div className="my-auto">
-          <HiPresentationChartBar/>
+      <div className="flex md:justify-start justify-center  gap-0.5 text-sm text-[#6a717f]">
+        <div className=" my-auto">
+          <HiPresentationChartBar />
         </div>
         : slide link
       </div>
-      <div className="flex gap-0.5 text-sm text-[#6a717f]">
-        <div className="my-auto">
+      <div className="flex  md:justify-start justify-center gap-0.5 text-sm text-[#6a717f]">
+        <div className=" my-auto">
           <BsCodeSlash />
         </div>
         : souce code
