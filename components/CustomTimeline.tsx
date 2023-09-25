@@ -152,16 +152,10 @@ const CustomTimeline = (props: any) => {
                   <Link key={i} href={event.recording}>
                     <div className="p-1 text-white relative w-[140px] h-[200px] rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 ">
                       <h1 className="text-5xl  p-1 text-yellow-300">{i + 1}</h1>
-                      <div className=" flex flex-col gap-1">
-                        <div>
-                          <h3 className="text-sm">Title-</h3>
-                          <p className="ml-1 text-xs ">{event.title}</p>
-                        </div>
-                        <div>
-                          <h3 className="text-sm">Speaker-</h3>
-                          <p className="ml-1 text-xs">{event.speaker}</p>
-                        </div>
-                      </div>
+                      <div className="flex flex-col gap-1">
+                      <p className="pl-1 text-sm">{event.title}</p>
+                      <p className="pl-1 mt-1 text-xs">{event.speaker}</p>
+                    </div>
                       <div className="flex justify-between absolute bottom-0 left-0 w-full ">
                         <p className=" p-1 text-xs font-semibold">
                           {event.date}
@@ -183,16 +177,10 @@ const CustomTimeline = (props: any) => {
                   <Link key={i} href={event.recording}>
                     <div className="p-1 border border-gray-700 text-white relative w-[140px] h-[200px] rounded-lg ">
                       <h1 className="text-5xl  p-1 text-yellow-300">{i + 1}</h1>
-                      <div className=" flex flex-col gap-1">
-                        <div>
-                          <h3 className="text-sm">Title-</h3>
-                          <p className="ml-1 text-xs ">{event.title}</p>
-                        </div>
-                        <div>
-                          <h3 className="text-sm">Speaker-</h3>
-                          <p className="ml-1 text-xs">{event.speaker}</p>
-                        </div>
-                      </div>
+                      <div className="flex flex-col gap-1">
+                      <p className="pl-1 text-sm">{event.title}</p>
+                      <p className="pl-1 mt-1 text-xs">{event.speaker}</p>
+                    </div>
                       <div className="flex justify-between absolute bottom-0 left-0 w-full ">
                         <p className=" p-1 text-xs font-semibold">
                           {event.date}
