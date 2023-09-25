@@ -28,7 +28,7 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
       <div className="flex gap-20 justify-center md:m-10 m-5 ">
         <div className="flex flex-col items-center text-white">
           <img
-            className="md:w-60 w-40 rounded-full object-cover"
+            className="md:w-60 w-32 rounded-full object-cover"
             src={profileImage}
             alt={name}
           />
