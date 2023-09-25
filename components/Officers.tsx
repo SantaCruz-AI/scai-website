@@ -57,7 +57,7 @@ const Officers = (props: any) => {
         <ProfileCard
           profileImage="profilePics/rishika.jpg"
           name="Rishika Srinivas"
-          role="Outreach/Fundraising Manager"
+          role="Outreach / Fundraising Manager"
           linkedin="https://www.linkedin.com/in/rishika-srinivas-a73098247/"
         />{" "}
         <ProfileCard
@@ -80,7 +80,7 @@ const Officers = (props: any) => {
         <ProfileCard
           profileImage="profilePics/brandon.jpg"
           name="Brandon Castro"
-          role="Creative Director/Web-Dev"
+          role="Creative Director / Web-Dev"
           linkedin="https://www.linkedin.com/in/brandon-castro22/"
         />
         <ProfileCard
