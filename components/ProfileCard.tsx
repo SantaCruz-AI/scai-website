@@ -25,7 +25,7 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
 }) => {
   return (
     <div className={nunito.className}>
-      <div className="flex flex-wrap gap-20 justify-center md:m-10 m-5 ">
+      <div className="flex gap-20 justify-center md:m-10 m-5 ">
         <div className="flex flex-col items-center text-white">
           <img
             className="md:w-60 w-40 rounded-full object-cover"
