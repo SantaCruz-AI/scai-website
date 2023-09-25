@@ -37,7 +37,7 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
           <div className="h-[4rem] py-3 flex items-center justify-center">
             {" "}
             {/* Fixed height and flexbox for vertical centering */}
-            <h1 className="text-[#6A717F] md:text-xl text-md md:max-w-[200px] max-w-[100px] text-center">
+            <h1 className="text-[#6A717F] md:text-xl text-sm md:max-w-[200px] max-w-[100px] text-center">
               {role}
             </h1>
           </div>
