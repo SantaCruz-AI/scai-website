@@ -27,7 +27,7 @@ import {
   Chip,
 } from "@material-tailwind/react";
 
-const Navbar: React.FC = (props:any) => {
+const Navbar: React.FC = (props: any) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleNavbar = () => {
@@ -37,19 +37,19 @@ const Navbar: React.FC = (props:any) => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth' // Smooth scroll animation
+      behavior: "smooth", // Smooth scroll animation
     });
   };
 
-  const scrollToSection = (sectionRef:any) => {
+  const scrollToSection = (sectionRef: any) => {
     window.scrollTo({
-      top: sectionRef.current.offsetTop-95,
-      behavior: 'smooth',
+      top: sectionRef.current.offsetTop - 95,
+      behavior: "smooth",
     });
-  }
+  };
 
   return (
-    <div className="text-white sticky top-0 z-[20] absolute w-screen">
+    <div className="text-white top-0 z-[20] absolute w-screen">
       <div
         className="... backdrop-filter backdrop-blur-lg bg-opacity-30 
      border-b  flex items-center w-full px-5 py-5 justify-between
@@ -62,10 +62,29 @@ const Navbar: React.FC = (props:any) => {
 
         <div className="hidden md:flex items-center w-full">
           <div className=" pl-11 w-full flex space-x-10 font-montserrat justify-center">
-            <h1 onClick={scrollToTop} className="cursor-pointer hover:text-amber-400 hover:opacity-100">Home</h1>
-            <h1 onClick={() => {scrollToSection(props.scheduleRef)}} className="cursor-pointer first-line:hover:text-amber-400 hover:opacity-100">Schedule</h1>
+            <h1
+              onClick={scrollToTop}
+              className="cursor-pointer hover:text-amber-400 hover:opacity-100"
+            >
+              Home
+            </h1>
+            <h1
+              onClick={() => {
+                scrollToSection(props.scheduleRef);
+              }}
+              className="cursor-pointer first-line:hover:text-amber-400 hover:opacity-100"
+            >
+              Schedule
+            </h1>
             {/* <h1 className="hover:text-amber-400 hover:opacity-100">Projects</h1> */}
-            <h1 onClick={() => {scrollToSection(props.officersRef)}} className="cursor-pointer hover:text-amber-400 hover:opacity-100">Officers</h1>
+            <h1
+              onClick={() => {
+                scrollToSection(props.officersRef);
+              }}
+              className="cursor-pointer hover:text-amber-400 hover:opacity-100"
+            >
+              Officers
+            </h1>
           </div>
 
           <div className="flex px-5 h-10 space-x-3">
@@ -108,9 +127,9 @@ const Navbar: React.FC = (props:any) => {
 
         <div className="h-[calc(100vh-2rem)] p-4">
           <div className="mb-2 p-4">
-           <h1 className=" font-bold bg-gradient-to-r from-pink-400 to-purple-500 bg-clip-text text-transparent">
-                Santa Cruz AI
-              </h1>
+            <h1 className=" font-bold bg-gradient-to-r from-pink-400 to-purple-500 bg-clip-text text-transparent">
+              Santa Cruz AI
+            </h1>
           </div>
 
           <List>
@@ -120,7 +139,11 @@ const Navbar: React.FC = (props:any) => {
               </ListItemPrefix>
               Home
             </ListItem>
-            <ListItem onClick={() => {scrollToSection(props.scheduleRef)}}>
+            <ListItem
+              onClick={() => {
+                scrollToSection(props.scheduleRef);
+              }}
+            >
               <ListItemPrefix>
                 <AiFillSchedule className="h-5 w-5" />
               </ListItemPrefix>
@@ -132,7 +155,11 @@ const Navbar: React.FC = (props:any) => {
               </ListItemPrefix>
               Projects
             </ListItem> */}
-            <ListItem onClick={() => {scrollToSection(props.officersRef)}}>
+            <ListItem
+              onClick={() => {
+                scrollToSection(props.officersRef);
+              }}
+            >
               <ListItemPrefix>
                 <FaPeopleGroup className="h-5 w-5" />
               </ListItemPrefix>
