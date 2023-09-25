@@ -167,53 +167,52 @@ const Navbar: React.FC = (props: any) => {
             </ListItem>
 
             <div className="pt-10">
-              <ListItem className="flex items-center">
-                <ListItemPrefix>
-                  <Link
-                    href="https://discord.gg/santacruzai"
-                    target="blank"
-                    className="w-8 "
-                  >
-                    <img src="discord.png" alt="Discord Server" />
-                  </Link>
-                </ListItemPrefix>
-                <span className="mr-2">Discord</span>
-                <MdKeyboardArrowRight />
-              </ListItem>
+              <Link href="https://discord.gg/santacruzai" target="blank">
+                <ListItem className="flex items-center">
+                  <ListItemPrefix>
+                    <img
+                      src="discord.png"
+                      className="w-8"
+                      alt="Discord Server"
+                    />
+                  </ListItemPrefix>
 
-              <ListItem className="flex items-center">
-                <ListItemPrefix>
-                  <Link
-                    href="https://instagram.com/ucscai?igshid=MzRlODBiNWFlZA=="
-                    target="blank"
-                  >
+                  <span className="mr-2">Discord</span>
+                  <MdKeyboardArrowRight />
+                </ListItem>
+              </Link>
+              <Link
+                href="https://instagram.com/ucscai?igshid=MzRlODBiNWFlZA=="
+                target="blank"
+              >
+                <ListItem className="flex items-center">
+                  <ListItemPrefix>
                     <img
                       src="instagram.png"
                       alt="Instagram Page"
                       className="w-8"
                     />
-                  </Link>
-                </ListItemPrefix>
-                <span className="mr-2">Instagram</span>
-                <MdKeyboardArrowRight />
-              </ListItem>
-
-              <ListItem className="flex items-center">
-                <ListItemPrefix>
-                  <Link
-                    href="https://www.linkedin.com/company/santa-cruz-artificial-intelligence/"
-                    target="blank"
-                  >
+                  </ListItemPrefix>
+                  <span className="mr-2">Instagram</span>
+                  <MdKeyboardArrowRight />
+                </ListItem>
+              </Link>
+              <Link
+                href="https://www.linkedin.com/company/santa-cruz-artificial-intelligence/"
+                target="blank"
+              >
+                <ListItem className="flex items-center">
+                  <ListItemPrefix>
                     <img
                       src="linkedin.png"
                       alt="UCSC AI Club Linkedin Profile"
                       className="w-8"
                     />
-                  </Link>
-                </ListItemPrefix>
-                <span className="mr-2">Linkedin</span>
-                <MdKeyboardArrowRight />
-              </ListItem>
+                  </ListItemPrefix>
+                  <span className="mr-2">Linkedin</span>
+                  <MdKeyboardArrowRight />
+                </ListItem>
+              </Link>
             </div>
           </List>
         </div>
