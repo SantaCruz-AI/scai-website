@@ -4,7 +4,7 @@ import { GoogleMap, MarkerF, useLoadScript } from "@react-google-maps/api";
 import Link from "next/link";
 
 import { BsCodeSlash } from "react-icons/bs";
-import { BiVideo } from "react-icons/bi";
+import { HiPresentationChartBar } from "react-icons/hi";
 
 const CustomTimeline = (props: any) => {
   const events = [
@@ -128,9 +128,9 @@ const CustomTimeline = (props: any) => {
       </p>
       <div className="flex gap-0.5 text-sm text-[#6a717f]">
         <div className="my-auto">
-          <BiVideo />
+          <HiPresentationChartBar/>
         </div>
-        : zoom link
+        : slide link
       </div>
       <div className="flex gap-0.5 text-sm text-[#6a717f]">
         <div className="my-auto">
@@ -166,7 +166,7 @@ const CustomTimeline = (props: any) => {
                         </p>
                         <div className="flex justify-center my-auto gap-2 mr-2">
                           <div className=" opacity-50">
-                            <BiVideo size={20} />
+                            <HiPresentationChartBar size={20} />
                           </div>
                           <div className=" opacity-50">
                             <BsCodeSlash size={20} />
@@ -198,7 +198,7 @@ const CustomTimeline = (props: any) => {
                         <div className="flex justify-center my-auto gap-2 mr-2">
                           <Link href={event.zoom}>
                             <div className=" opacity-50 hover:opacity-100 transition duration-300 ease-in-out">
-                              <BiVideo size={20} />
+                              <HiPresentationChartBar size={20} />
                             </div>
                           </Link>
                           <Link href={event.code}>
@@ -226,7 +226,7 @@ const CustomTimeline = (props: any) => {
                       <p className=" p-1 text-xs font-semibold">{event.date}</p>
                       <div className="flex justify-center my-auto gap-2 mr-2">
                         <div className="opacity-50">
-                          <BiVideo size={20} />
+                          <HiPresentationChartBar size={20} />
                         </div>
                         <div className="opacity-50">
                           <BsCodeSlash size={20} />

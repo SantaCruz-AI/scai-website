@@ -6,10 +6,10 @@ const listID = 'e35023e932';
 
 export async function POST(request: Request) {
     const { email } = await request.json();
-    console.log(email);
 
     // Check email status
     const subscriberHash = md5(email.toLowerCase());
+    let status:any = null;
 
     try {
         const response = await mailchimp.lists.getListMember(
@@ -18,10 +18,12 @@ export async function POST(request: Request) {
         );
     
         console.log(`This user's subscription status is ${response.status}.`);
+        
       } catch (e:any) {
+        status = e.status;
         if (e.status === 404) {
             console.log("User is not in audience.");
-
+          
             const addRes = await mailchimp.lists.addListMember(
                 listID,{
                     email_address: email.toLowerCase(),
@@ -29,8 +31,8 @@ export async function POST(request: Request) {
                     merge_fields: {}
                 }
             )
-        }
+        } 
       }
 
-    return NextResponse.json({ 'hello': 'world'});
+    return NextResponse.json({ 'status': status});
 }

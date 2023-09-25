@@ -5,10 +5,9 @@ import Footer from "@/components/Footer";
 import { Montserrat } from "next/font/google";
 const montserrat = Montserrat({ subsets: ["latin"] });
 
-
 export const metadata: Metadata = {
   title: "UCSC Artificial Intelligence",
-  description: "SCAI Club",
+  description: "University of California Santa Cruz Artifical Intelligence club",
 };
 
 export default function RootLayout({

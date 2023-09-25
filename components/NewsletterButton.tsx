@@ -13,6 +13,7 @@ interface Modal {
 
 const MyModal: FC<Modal> = (props) => {
   const [email, setEmail] = useState("");
+  const [response, setResponse] = useState("");
 
   const makeApiCall = async () => {
     const response = await fetch("/api/newsletter", {
@@ -21,6 +22,11 @@ const MyModal: FC<Modal> = (props) => {
     });
 
     const body = await response.json();
+    if (body.status == 404) {
+      setResponse("Email Added!");
+    } else {
+      setResponse("Email is already added.");
+    }
   };
 
   const handleSubmit = async (event: any) => {
@@ -29,13 +35,18 @@ const MyModal: FC<Modal> = (props) => {
     setEmail("");
   };
 
+  const handleOnClose = () => {
+    setResponse("");
+    props.onClose();
+  }
+
   if (!props.visible) return null;
 
   return (
-    <div className="sans fixed inset-0 z-30 text-black bg-black bg-opacity-30 backdrop-blur-sm flex justify-center items-center">
+    <div className="p-4 sans fixed inset-0 z-30 text-black bg-black bg-opacity-30 backdrop-blur-sm flex justify-center items-center">
       <div className="p-10 bg-white rounded-lg relative">
         <button
-          onClick={props.onClose}
+          onClick={() => {handleOnClose()}}
           className="absolute w-8 h-8 translate-x-3 -translate-y-3 top-0 right-0 bg-white text-neutral-700 hover:text-neutral-900 text-md rounded-full "
         >
           X
@@ -43,7 +54,8 @@ const MyModal: FC<Modal> = (props) => {
         <h1 className=" text-2xl">SCAI Newsletter</h1>
         <p>Stay up to date with the latest club activitys. </p>
         <p>(We don&apos;t spam!)</p>
-        <form className="w-full mt-6" onSubmit={handleSubmit}>
+        <p className="text-green-300 font-semibold">{response}</p>
+        <form className="w-full mt-3" onSubmit={handleSubmit}>
           <input
             required
             id="email"
