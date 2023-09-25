@@ -64,6 +64,7 @@ const Officers = (props: any) => {
           profileImage="profilePics/ananth.jpg"
           name='Anath "Ant" Srikanth'
           role="Events Manager"
+          linkedin="https://www.linkedin.com/in/ananthajit-srikanth-011519262/"
         />
         <ProfileCard
           profileImage="profilePics/neel.jpg"
