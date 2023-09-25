@@ -1,15 +1,12 @@
 "use client";
 import { ImCancelCircle } from "react-icons/im";
 import { useRef } from "react";
-import Box from "@/components/Box";
 import Background from "@/components/Background";
 import ScaiLogo from "@/components/ScaiLogo";
 import NewsletterButton from "@/components/NewsletterButton";
 import CustomTimeline from "@/components/CustomTimeline";
-import Footer from "@/components/Footer";
 import Navbar from "@/components/NavBar";
 import Officers from "@/components/Officers";
-import Projects from "@/components/Projects";
 
 export default function Home() {
   const schedule = useRef(null);
