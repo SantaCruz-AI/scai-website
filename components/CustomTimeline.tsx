@@ -18,7 +18,7 @@ const CustomTimeline = (props: any) => {
     },
     {
       title: "What is AI/ML?",
-      speaker: "Coen Adler",
+      speaker: "-",
       date: "10/10/23",
       recording: "/",
       zoom: "/",
@@ -42,7 +42,7 @@ const CustomTimeline = (props: any) => {
     },
     {
       title: "SCAI Jam",
-      speaker: "TBH",
+      speaker: "-",
       date: "11/4/23",
       recording: "/",
       zoom: "/",
@@ -50,7 +50,7 @@ const CustomTimeline = (props: any) => {
     },
     {
       title: "Decision Tree Classifier",
-      speaker: "Coen Adler",
+      speaker: "-",
       date: "11/7/23",
       recording: "/",
       zoom: "/",
@@ -58,7 +58,7 @@ const CustomTimeline = (props: any) => {
     },
     {
       title: "Recommendation Algorithms",
-      speaker: "Coen Adler",
+      speaker: "-",
       date: "11/14/23",
       recording: "/",
       zoom: "/",
@@ -66,7 +66,7 @@ const CustomTimeline = (props: any) => {
     },
     {
       title: "Thanksgiving",
-      speaker: "",
+      speaker: "-",
       date: "11/21/23",
       recording: "/",
       zoom: "/",
@@ -82,7 +82,7 @@ const CustomTimeline = (props: any) => {
     },
     {
       title: "SCAI is No Limit",
-      speaker: "Rahul Nadkarni, Jonathan Vengosh, Coen Adler",
+      speaker: "Rahul Nadkarni, Jonathan Vengosh",
       date: "12/3/23",
       recording: "/",
       zoom: "/",
@@ -123,7 +123,7 @@ const CustomTimeline = (props: any) => {
         Fall Schedule
       </h1>
       <p className="text-white md:text-left text-center text-xl font-semibold">
-        Tuesdays 6-7pm
+        Tuesdays 5-6pm
       </p>
       <p className="text-md md:text-left text-center text-[#6a717f]">
         (Click on the cards to be direct to the recording)

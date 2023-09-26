@@ -53,7 +53,7 @@ const MyModal: FC<Modal> = (props) => {
         </button>
         <h1 className=" text-2xl">SCAI Newsletter</h1>
         <p>Stay up to date with the latest club activitys. </p>
-        <p>(We don&apos;t spam!)</p>
+        <p>(Check your spam for the confirmation email)</p>
         <p className="text-green-300 font-semibold">{response}</p>
         <form className="w-full mt-3" onSubmit={handleSubmit}>
           <input
