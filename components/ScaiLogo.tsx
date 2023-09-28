@@ -14,11 +14,11 @@ const Bulb = (props: any) => {
     { path: "envMap/" }
   );
 
-  const bulb = useGLTF("/models/logo.glb");
-  const base: any = bulb.scene.getObjectByName("Object_0001");
-  const nodes: any = bulb.scene.getObjectByName("Cylinder001_1");
-  const glassBalls: any = bulb.scene.getObjectByName("Cylinder001_2");
-  const glassLogo: any = bulb.scene.getObjectByName("Circle001");
+  const bulb = useGLTF("/models/ScaiLogo.glb");
+  const base: any = bulb.scene.getObjectByName("base");
+  const nodes: any = bulb.scene.getObjectByName("nodes");
+  const glassBalls: any = bulb.scene.getObjectByName("bulbs");
+  const glassLogo: any = bulb.scene.getObjectByName("logoCircle");
 
   const glassMaterial = new THREE.MeshPhysicalMaterial({
     color: new THREE.Color(0xfbff00),
@@ -56,8 +56,9 @@ const Bulb = (props: any) => {
   glassLogo["material"].needsUpdate = true;
 
   useFrame((state, delta) => {
-    ref.current.children[0].children[3].rotation.y += delta / 2;
-    ref.current.children[0].children[2].rotation.y -= delta / 3;
+    ref.current.children[1].rotation.y += delta / 2;
+    //console.log(ref);
+    ref.current.children[0].rotation.y -= delta / 3;
   });
 
   return (
@@ -65,7 +66,7 @@ const Bulb = (props: any) => {
       <primitive
         ref={ref}
         position={[0, -2, 0]}
-        scale={2}
+        scale={1.9}
         object={bulb.scene}
       />
     </>
