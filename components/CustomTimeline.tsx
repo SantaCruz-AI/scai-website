@@ -125,6 +125,9 @@ const CustomTimeline = (props: any) => {
       <p className="text-white md:text-left text-center text-xl font-semibold">
         Tuesdays 5-6pm
       </p>
+      <p className="text-white md:text-left text-center text-lg ">
+        Location: E2-180
+      </p>
       <p className="text-md md:text-left text-center text-[#6a717f]">
         (Click on the cards to be direct to the recording)
       </p>
@@ -153,9 +156,9 @@ const CustomTimeline = (props: any) => {
                     <div className="p-1 text-white relative w-[140px] h-[200px] rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 ">
                       <h1 className="text-5xl  p-1 text-yellow-300">{i + 1}</h1>
                       <div className="flex flex-col gap-1">
-                      <p className="pl-1 text-sm">{event.title}</p>
-                      <p className="pl-1 mt-1 text-xs">{event.speaker}</p>
-                    </div>
+                        <p className="pl-1 text-sm">{event.title}</p>
+                        <p className="pl-1 mt-1 text-xs">{event.speaker}</p>
+                      </div>
                       <div className="flex justify-between absolute bottom-0 left-0 w-full ">
                         <p className=" p-1 text-xs font-semibold">
                           {event.date}
@@ -178,9 +181,9 @@ const CustomTimeline = (props: any) => {
                     <div className="p-1 border border-gray-700 text-white relative w-[140px] h-[200px] rounded-lg ">
                       <h1 className="text-5xl  p-1 text-yellow-300">{i + 1}</h1>
                       <div className="flex flex-col gap-1">
-                      <p className="pl-1 text-sm">{event.title}</p>
-                      <p className="pl-1 mt-1 text-xs">{event.speaker}</p>
-                    </div>
+                        <p className="pl-1 text-sm">{event.title}</p>
+                        <p className="pl-1 mt-1 text-xs">{event.speaker}</p>
+                      </div>
                       <div className="flex justify-between absolute bottom-0 left-0 w-full ">
                         <p className=" p-1 text-xs font-semibold">
                           {event.date}

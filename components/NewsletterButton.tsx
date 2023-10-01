@@ -38,7 +38,7 @@ const MyModal: FC<Modal> = (props) => {
   const handleOnClose = () => {
     setResponse("");
     props.onClose();
-  }
+  };
 
   if (!props.visible) return null;
 
@@ -46,7 +46,9 @@ const MyModal: FC<Modal> = (props) => {
     <div className="p-4 sans fixed inset-0 z-30 text-black bg-black bg-opacity-30 backdrop-blur-sm flex justify-center items-center">
       <div className="p-10 bg-white rounded-lg relative">
         <button
-          onClick={() => {handleOnClose()}}
+          onClick={() => {
+            handleOnClose();
+          }}
           className="absolute w-8 h-8 translate-x-3 -translate-y-3 top-0 right-0 bg-white text-neutral-700 hover:text-neutral-900 text-md rounded-full "
         >
           X
