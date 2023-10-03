@@ -104,10 +104,14 @@ const CustomTimeline = (props: any) => {
   useEffect(() => {
     let today = new Date();
     let next: any = null;
+    console.log(today) 
+    
 
     events.forEach((event) => {
       if (next == null) {
         let date = new Date(event.date);
+        date.setHours(17,0,0);
+
         if (date > today) {
           next = event.date;
         }
