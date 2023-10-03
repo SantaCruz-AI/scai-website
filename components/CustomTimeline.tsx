@@ -110,8 +110,7 @@ const CustomTimeline = (props: any) => {
     events.forEach((event) => {
       if (next == null) {
         let date = new Date(event.date);
-        date.setHours(17,0,0);
-
+        date.setHours(18,0,0)
         if (date > today) {
           next = event.date;
         }
