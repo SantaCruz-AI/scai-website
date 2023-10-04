@@ -12,9 +12,9 @@ const CustomTimeline = (props: any) => {
       title: "Fall Quarter Info Night",
       speaker: "The entire SCAI team!",
       date: "10/3/23",
-      recording: "/",
+      recording: "https://drive.google.com/file/d/1YQC_bwMq0M6k4gTRB1k1uIXCRN4uJ5R7/view",
       slides: "https://docs.google.com/presentation/d/1_v71J9Gjv74z93x1X1fWSMKqFTragSNJt5Zzp6_muvc/edit?usp=sharing",
-      code: "/",
+      code: "",
     },
     {
       title: "What is AI/ML?",
@@ -166,22 +166,15 @@ const CustomTimeline = (props: any) => {
                         <p className=" p-1 text-xs font-semibold">
                           {event.date}
                         </p>
-                        <div className="flex justify-center my-auto gap-2 mr-2">
-                          <div className=" opacity-50">
-                            <HiPresentationChartBar size={20} />
-                          </div>
-                          <div className=" opacity-50">
-                            <BsCodeSlash size={20} />
-                          </div>
-                        </div>
+                        
                       </div>
                     </div>
                   </Link>
                 );
               } else if (today.getTime() > date.getTime()) {
                 return (
-                  <Link key={i} href={event.recording}>
-                    <div className="p-1 border border-gray-700 text-white relative w-[140px] h-[200px] rounded-lg ">
+                  <a target={"_blank"} rel={"noopener noreferrer"} key={i} href={event.recording}>
+                    <div className="p-1 border border-gray-700 text-white relative w-[140px] h-[200px] rounded-lg hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-500 transition duration-300 ease-in-out">
                       <h1 className="text-5xl  p-1 text-yellow-300">{i + 1}</h1>
                       <div className="flex flex-col gap-1">
                         <p className="pl-1 text-sm">{event.title}</p>
@@ -192,26 +185,26 @@ const CustomTimeline = (props: any) => {
                           {event.date}
                         </p>
                         <div className="flex justify-center my-auto gap-2 mr-2">
-                          <Link href={event.slides}>
+                          <a target={"_blank"} rel={"noopener noreferrer"} href={event.slides}>
                             <div className=" opacity-50 hover:opacity-100 transition duration-300 ease-in-out">
                               <HiPresentationChartBar size={20} />
                             </div>
-                          </Link>
-                          <Link href={event.code}>
+                          </a>
+                          <a  target={"_blank"} rel={"noopener noreferrer"} href={event.code}>
                             <div className=" opacity-50 hover:opacity-100 transition duration-300 ease-in-out">
                               <BsCodeSlash size={20} />
                             </div>
-                          </Link>
+                          </a>
                         </div>
                       </div>
                     </div>
-                  </Link>
+                  </a>
                 );
               } else {
                 return (
                   <div
                     key={i}
-                    className="p-1 border border-gray-700 text-white relative w-[140px] h-[200px] rounded-lg hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-500 transition duration-300 ease-in-out"
+                    className="p-1 border border-gray-700 text-white relative w-[140px] h-[200px] rounded-lg"
                   >
                     <h1 className="text-5xl  p-1 text-yellow-300">{i + 1}</h1>
                     <div className="flex flex-col gap-1">
@@ -220,14 +213,6 @@ const CustomTimeline = (props: any) => {
                     </div>
                     <div className="flex justify-between absolute bottom-0 left-0 w-full ">
                       <p className=" p-1 text-xs font-semibold">{event.date}</p>
-                      <div className="flex justify-center my-auto gap-2 mr-2">
-                        <div className="opacity-50">
-                          <HiPresentationChartBar size={20} />
-                        </div>
-                        <div className="opacity-50">
-                          <BsCodeSlash size={20} />
-                        </div>
-                      </div>
                     </div>
                   </div>
                 );
