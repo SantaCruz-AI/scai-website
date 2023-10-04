@@ -13,7 +13,7 @@ const CustomTimeline = (props: any) => {
       speaker: "The entire SCAI team!",
       date: "10/3/23",
       recording: "/",
-      zoom: "/",
+      slides: "https://docs.google.com/presentation/d/1_v71J9Gjv74z93x1X1fWSMKqFTragSNJt5Zzp6_muvc/edit?usp=sharing",
       code: "/",
     },
     {
@@ -21,7 +21,7 @@ const CustomTimeline = (props: any) => {
       speaker: "-",
       date: "10/10/23",
       recording: "/",
-      zoom: "/",
+      slides: "/",
       code: "/",
     },
     {
@@ -29,7 +29,7 @@ const CustomTimeline = (props: any) => {
       speaker: "Rahul Nadkarni",
       date: "10/17/23",
       recording: "/",
-      zoom: "/",
+      slides: "/",
       code: "/",
     },
     {
@@ -37,7 +37,7 @@ const CustomTimeline = (props: any) => {
       speaker: "Andrew Kato",
       date: "10/24/23",
       recording: "/",
-      zoom: "/",
+      slides: "/",
       code: "/",
     },
     {
@@ -45,7 +45,7 @@ const CustomTimeline = (props: any) => {
       speaker: "-",
       date: "11/4/23",
       recording: "/",
-      zoom: "/",
+      slides: "/",
       code: "/",
     },
     {
@@ -53,7 +53,7 @@ const CustomTimeline = (props: any) => {
       speaker: "-",
       date: "11/7/23",
       recording: "/",
-      zoom: "/",
+      slides: "/",
       code: "/",
     },
     {
@@ -61,7 +61,7 @@ const CustomTimeline = (props: any) => {
       speaker: "-",
       date: "11/14/23",
       recording: "/",
-      zoom: "/",
+      slides: "/",
       code: "/",
     },
     {
@@ -69,7 +69,7 @@ const CustomTimeline = (props: any) => {
       speaker: "-",
       date: "11/21/23",
       recording: "/",
-      zoom: "/",
+      slides: "/",
       code: "/",
     },
     {
@@ -77,7 +77,7 @@ const CustomTimeline = (props: any) => {
       speaker: "Jonathan Vengosh",
       date: "11/28/23",
       recording: "/",
-      zoom: "/",
+      slides: "/",
       code: "/",
     },
     {
@@ -85,7 +85,7 @@ const CustomTimeline = (props: any) => {
       speaker: "Rahul Nadkarni, Jonathan Vengosh",
       date: "12/3/23",
       recording: "/",
-      zoom: "/",
+      slides: "/",
       code: "/",
     },
   ];
@@ -192,7 +192,7 @@ const CustomTimeline = (props: any) => {
                           {event.date}
                         </p>
                         <div className="flex justify-center my-auto gap-2 mr-2">
-                          <Link href={event.zoom}>
+                          <Link href={event.slides}>
                             <div className=" opacity-50 hover:opacity-100 transition duration-300 ease-in-out">
                               <HiPresentationChartBar size={20} />
                             </div>
