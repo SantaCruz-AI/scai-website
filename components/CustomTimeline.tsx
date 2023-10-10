@@ -126,7 +126,7 @@ const CustomTimeline = (props: any) => {
         Fall Schedule
       </h1>
       <p className="text-white md:text-left text-center text-xl font-semibold">
-        Tuesdays 5-6pm
+        Tuesdays 4-5pm
       </p>
       <p className="text-white md:text-left text-center text-lg ">
         Location: E2-180
