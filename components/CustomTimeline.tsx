@@ -12,8 +12,10 @@ const CustomTimeline = (props: any) => {
       title: "Fall Quarter Info Night",
       speaker: "The entire SCAI team!",
       date: "10/3/23",
-      recording: "https://drive.google.com/file/d/1YQC_bwMq0M6k4gTRB1k1uIXCRN4uJ5R7/view",
-      slides: "https://docs.google.com/presentation/d/1_v71J9Gjv74z93x1X1fWSMKqFTragSNJt5Zzp6_muvc/edit?usp=sharing",
+      recording:
+        "https://drive.google.com/file/d/1YQC_bwMq0M6k4gTRB1k1uIXCRN4uJ5R7/view",
+      slides:
+        "https://docs.google.com/presentation/d/1_v71J9Gjv74z93x1X1fWSMKqFTragSNJt5Zzp6_muvc/edit?usp=sharing",
       code: "",
     },
     {
@@ -104,13 +106,12 @@ const CustomTimeline = (props: any) => {
   useEffect(() => {
     let today = new Date();
     let next: any = null;
-    console.log(today) 
-    
+    console.log(today);
 
     events.forEach((event) => {
       if (next == null) {
         let date = new Date(event.date);
-        date.setHours(18,0,0)
+        date.setHours(18, 0, 0);
         if (date > today) {
           next = event.date;
         }
@@ -126,7 +127,7 @@ const CustomTimeline = (props: any) => {
         Fall Schedule
       </h1>
       <p className="text-white md:text-left text-center text-xl font-semibold">
-        Tuesdays 4-5pm
+        Tuesdays 5-6pm
       </p>
       <p className="text-white md:text-left text-center text-lg ">
         Location: E2-180
@@ -166,14 +167,18 @@ const CustomTimeline = (props: any) => {
                         <p className=" p-1 text-xs font-semibold">
                           {event.date}
                         </p>
-                        
                       </div>
                     </div>
                   </Link>
                 );
               } else if (today.getTime() > date.getTime()) {
                 return (
-                  <a target={"_blank"} rel={"noopener noreferrer"} key={i} href={event.recording}>
+                  <a
+                    target={"_blank"}
+                    rel={"noopener noreferrer"}
+                    key={i}
+                    href={event.recording}
+                  >
                     <div className="p-1 border border-gray-700 text-white relative w-[140px] h-[200px] rounded-lg hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-500 transition duration-300 ease-in-out">
                       <h1 className="text-5xl  p-1 text-yellow-300">{i + 1}</h1>
                       <div className="flex flex-col gap-1">
@@ -185,12 +190,20 @@ const CustomTimeline = (props: any) => {
                           {event.date}
                         </p>
                         <div className="flex justify-center my-auto gap-2 mr-2">
-                          <a target={"_blank"} rel={"noopener noreferrer"} href={event.slides}>
+                          <a
+                            target={"_blank"}
+                            rel={"noopener noreferrer"}
+                            href={event.slides}
+                          >
                             <div className=" opacity-50 hover:opacity-100 transition duration-300 ease-in-out">
                               <HiPresentationChartBar size={20} />
                             </div>
                           </a>
-                          <a  target={"_blank"} rel={"noopener noreferrer"} href={event.code}>
+                          <a
+                            target={"_blank"}
+                            rel={"noopener noreferrer"}
+                            href={event.code}
+                          >
                             <div className=" opacity-50 hover:opacity-100 transition duration-300 ease-in-out">
                               <BsCodeSlash size={20} />
                             </div>
