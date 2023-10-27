@@ -67,71 +67,139 @@ const competition = () => {
           Databases:
           <ul className="list-disc list-inside pl-5 pb-2 text-blue-500">
             <li>
-              <Link href="https://www.kaggle.com/datasets">Kaggle</Link>
+              <a
+                href="https://www.kaggle.com/datasets"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Kaggle
+              </a>
             </li>
             <li>
-              <Link href="https://archive.ics.uci.edu/ml/index.php">
+              <a
+                href="https://archive.ics.uci.edu/ml/index.php"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 UCI Machine Learning Repository
-              </Link>
+              </a>
             </li>
             <li>
-              <Link href="http://Data.gov">Data.gov</Link>
+              <a
+                href="http://Data.gov"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Data.gov
+              </a>
             </li>
             <li>
-              <Link href="https://www.openml.org/">OpenML</Link>
+              <a
+                href="https://www.openml.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                OpenML
+              </a>
             </li>
           </ul>
           Research Databases:
           <ul className="list-disc list-inside pl-5 pb-2 text-blue-500">
             <li>
-              <Link href="https://www.jstor.org/">JSTOR</Link>
+              <a
+                href="https://www.jstor.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                JSTOR
+              </a>
             </li>
             <li>
-              <Link href="https://www.ebsco.com/products/research-databases/free-databases">
+              <a
+                href="https://www.ebsco.com/products/research-databases/free-databases"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 EBSCO
-              </Link>
+              </a>
             </li>
             <li>
-              <Link href="https://library.ucsc.edu/">UCSC Library</Link>
+              <a
+                href="https://library.ucsc.edu/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                UCSC Library
+              </a>
             </li>
           </ul>
           Learning:
           <ul className="list-disc list-inside pl-5 pb-2 text-blue-500">
             <li>
-              <Link href="https://developers.google.com/machine-learning/crash-course/">
+              <a
+                href="https://developers.google.com/machine-learning/crash-course/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Google Developer ML Crash Course
-              </Link>
+              </a>
             </li>
-
             <li>
-              <Link href="https://www.youtube.com/watch?v=jGwO_UgTS7I&list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU">
+              <a
+                href="https://www.youtube.com/watch?v=jGwO_UgTS7I&list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Stanford ML Course with Andrew Ng
-              </Link>
+              </a>
             </li>
           </ul>
           Code Libraries:
           <ul className="list-disc list-inside pl-5 pb-2 text-blue-500 ">
             <li>
-              <Link href="https://numpy.org/doc/stable/reference/">NumPy</Link>
+              <a
+                href="https://numpy.org/doc/stable/reference/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                NumPy
+              </a>
             </li>
-
             <li>
-              <Link href="https://pandas.pydata.org/pandas-docs/stable/reference/index.html">
+              <a
+                href="https://pandas.pydata.org/pandas-docs/stable/reference/index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Pandas
-              </Link>
+              </a>
             </li>
             <li>
-              <Link href="https://matplotlib.org/stable/api/pyplot_summary.html">
+              <a
+                href="https://matplotlib.org/stable/api/pyplot_summary.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Matplotlib
-              </Link>
+              </a>
             </li>
             <li>
-              <Link href="https://seaborn.pydata.org/api.html">Seaborn</Link>
+              <a
+                href="https://seaborn.pydata.org/api.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Seaborn
+              </a>
             </li>
             <li>
-              <Link href="https://scikit-learn.org/stable/modules/classes.html">
+              <a
+                href="https://scikit-learn.org/stable/modules/classes.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Scikit-learn
-              </Link>
+              </a>
             </li>
           </ul>
         </h1>
