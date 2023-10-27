@@ -24,7 +24,7 @@ const competition = () => {
         </h1>
         <h1 className="text-3xl font-bold py-5">Theme</h1>
         <h1 className="text-left text-[#6A717F] text-md md:text-xl font-semibold">
-          The theme of the Fall 2022 competition, as announced during the
+          The theme of the Fall 2023 competition, as announced during the
           meeting on October 10th, is “Hedge Your Bets”. Contestants are
           encouraged to be creative with their interpretation of the theme. If
           you think your idea is a stretch of the imagination, don’t hesitate to
