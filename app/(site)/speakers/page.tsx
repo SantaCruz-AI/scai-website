@@ -12,7 +12,7 @@ const speakers = () => {
 
       <div className="flex flex-wrap md:gap-20 justify-center max-w-[1300px] mx-auto">
         <ProfileCard
-          profileImage="profilePics/jesse.jpeg"
+          profileImage="profilePics/Jesse.jpeg"
           name="Prof. Jesse Thomason"
           role="Robotics/NLP Integration Research at USC"
           date="October 19th"
