@@ -148,7 +148,7 @@ const Navbar: React.FC = (props: any) => {
               <ListItemPrefix>
                 <AiFillHome className="h-5 w-5" />
               </ListItemPrefix>
-              Home
+              <Link href="/">Home</Link>
             </ListItem>
             <ListItem
               onClick={() => {
