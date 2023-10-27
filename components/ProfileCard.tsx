@@ -14,6 +14,7 @@ type ProfileCardProps = {
   role: string;
   linkedinImage?: string;
   linkedin?: string;
+  date?: string;
 };
 
 const ProfileCard: React.FC<ProfileCardProps> = ({
@@ -22,6 +23,7 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
   role,
   linkedinImage = "linkedin.png",
   linkedin,
+  date,
 }) => {
   return (
     <div className={nunito.className}>
@@ -40,6 +42,9 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
             <h1 className="text-[#6A717F] md:text-xl text-sm md:max-w-[200px] max-w-[100px] text-center">
               {role}
             </h1>
+          </div>
+          <div className="md:text-lg text-sm md:max-w-[200px] max-w-[100px] text-center">
+            {date}
           </div>
           <a href={linkedin} target="_blank" rel="noopener noreferrer">
             <img className="pt-4" src={linkedinImage} alt="LinkedIn" />

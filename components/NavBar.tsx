@@ -13,8 +13,13 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { BiCodeAlt } from "react-icons/bi";
-import { FaPeopleGroup } from "react-icons/fa6";
-import { BsDiscord, BsInstagram, BsLinkedin } from "react-icons/bs";
+import { FaPeopleGroup, FaTrophy } from "react-icons/fa6";
+import {
+  BsDiscord,
+  BsInstagram,
+  BsLinkedin,
+  BsFillPersonFill,
+} from "react-icons/bs";
 import { MdKeyboardArrowRight } from "react-icons/md";
 
 import {
@@ -66,7 +71,7 @@ const Navbar: React.FC = (props: any) => {
               onClick={scrollToTop}
               className="cursor-pointer hover:text-amber-400 hover:opacity-100"
             >
-              Home
+              <Link href="/">Home</Link>
             </h1>
             <h1
               onClick={() => {
@@ -84,6 +89,12 @@ const Navbar: React.FC = (props: any) => {
               className="cursor-pointer hover:text-amber-400 hover:opacity-100"
             >
               Officers
+            </h1>
+            <h1 className="cursor-pointer hover:text-amber-400 hover:opacity-100">
+              <Link href="/speakers">Speakers</Link>
+            </h1>
+            <h1 className="cursor-pointer hover:text-amber-400 hover:opacity-100">
+              <Link href="/competition">Competition</Link>
             </h1>
           </div>
 
@@ -149,12 +160,6 @@ const Navbar: React.FC = (props: any) => {
               </ListItemPrefix>
               Schedule
             </ListItem>
-            {/* <ListItem>
-              <ListItemPrefix>
-                <BiCodeAlt className="h-5 w-5" />
-              </ListItemPrefix>
-              Projects
-            </ListItem> */}
             <ListItem
               onClick={() => {
                 scrollToSection(props.officersRef);
@@ -164,6 +169,19 @@ const Navbar: React.FC = (props: any) => {
                 <FaPeopleGroup className="h-5 w-5" />
               </ListItemPrefix>
               Officers
+            </ListItem>
+            <ListItem>
+              <ListItemPrefix>
+                <BsFillPersonFill className="h-5 w-5" />
+              </ListItemPrefix>
+              <Link href="/speakers">Speakers</Link>
+            </ListItem>
+
+            <ListItem>
+              <ListItemPrefix>
+                <FaTrophy className="h-5 w-5" />
+              </ListItemPrefix>
+              <Link href="/competition">Competition</Link>
             </ListItem>
 
             <div className="pt-10">
