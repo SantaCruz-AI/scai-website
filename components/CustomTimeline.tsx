@@ -22,23 +22,27 @@ const CustomTimeline = (props: any) => {
       title: "What is AI/ML?",
       speaker: "-",
       date: "10/10/23",
-      recording: "/",
+      recording:
+        "https://drive.google.com/file/d/14f_9WPE4XqHH_bUYhOCtScuSQyjGQBea/view?usp=drive_link",
       slides: "/",
       code: "/",
     },
     {
-      title: "Stock Market Prediction",
+      title: "Housing Market Prediction",
       speaker: "Rahul Nadkarni",
       date: "10/17/23",
-      recording: "/",
-      slides: "/",
+      recording:
+        "https://drive.google.com/file/d/1pQJh1wNUrZ65tc3sZELJE7tI0syz95G9/view?usp=drive_link",
+      slides:
+        "https://docs.google.com/presentation/d/1pDhRzfu-0GS0EuSS3iysDRLxXvINtj2-elmYn8JMlGg/edit?usp=share_link",
       code: "/",
     },
     {
       title: "Sentiment Analysis",
       speaker: "Andrew Kato",
       date: "10/24/23",
-      recording: "/",
+      recording:
+        "https://drive.google.com/file/d/1jCSZVFmZlmZ8LIUnL_kNjYvxuuSTrH8G/view?usp=drive_link",
       slides: "/",
       code: "/",
     },
