@@ -32,6 +32,13 @@ const speakers = () => {
           linkedin="https://www.linkedin.com/in/kumar-chivukula/"
           date="November 16th"
         />
+        <ProfileCard
+          profileImage="profilePics/alexander.jpeg"
+          name="Alexander Lerch"
+          role="Professor at Georgia Tech"
+          linkedin="https://www.linkedin.com/in/lerch/"
+          date="November 30th"
+        />
       </div>
     </div>
   );
