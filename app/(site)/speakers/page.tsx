@@ -19,13 +19,6 @@ const speakers = () => {
           linkedin="https://www.linkedin.com/in/jesse-thomason-034746171/"
         />
         <ProfileCard
-          profileImage="profilePics/pranav.jpeg"
-          name="Pranav Vempati"
-          role="Former SCAI President"
-          linkedin="https://www.linkedin.com/in/pranav-vempati/"
-          date="November 2nd"
-        />{" "}
-        <ProfileCard
           profileImage="profilePics/janesh.jpeg"
           name="Janesh Chhabra"
           role="Senior Software Engineer at AWS"
