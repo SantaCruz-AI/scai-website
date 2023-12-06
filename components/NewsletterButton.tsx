@@ -1,6 +1,5 @@
 "use client";
 
-//fe8acbebd22a2e6aa81287f195d4ce42-us8
 
 import React, { FC, useState } from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
