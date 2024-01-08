@@ -10,7 +10,8 @@ const speakers = () => {
         Speakers
       </h1>
 
-      <div className="flex flex-wrap md:gap-20 justify-center max-w-[1300px] mx-auto">
+        
+      {/* <div className="flex flex-wrap md:gap-20 justify-center max-w-[1300px] mx-auto">
         <ProfileCard
           profileImage="profilePics/Jesse.jpeg"
           name="Prof. Jesse Thomason"
@@ -39,7 +40,7 @@ const speakers = () => {
           linkedin="https://www.linkedin.com/in/lerch/"
           date="November 30th"
         />
-      </div>
+      </div> */}
     </div>
   );
 };
