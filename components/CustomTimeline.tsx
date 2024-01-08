@@ -1,10 +1,13 @@
 "use client";
+
 import React, { useMemo, useState, useEffect } from "react";
-import { GoogleMap, MarkerF, useLoadScript } from "@react-google-maps/api";
+import { GoogleMap, MarkerF, useJsApiLoader } from "@react-google-maps/api";
 import Link from "next/link";
 
 import { BsCodeSlash } from "react-icons/bs";
 import { HiPresentationChartBar } from "react-icons/hi";
+
+const key = process.env.NEXT_PUBLIC_NOT_A_GOOGLE_API as any
 
 const CustomTimeline = (props: any) => {
   const events = [
@@ -95,11 +98,13 @@ const CustomTimeline = (props: any) => {
       code: "/",
     },
   ];
+  
+  const { isLoaded } = useJsApiLoader({
+    id: 'google-map-script',
+    googleMapsApiKey: key,
+  })
 
-  const { isLoaded } = useLoadScript({
-    googleMapsApiKey: "AIzaSyA7BKFn0Dr8WjkikGThME5gUwsEnt22SyE",
-  });
-
+  //console.log(process.env.NOT_A_GOOGLE_API as string)
   const center = useMemo(
     () => ({ lat: 37.00092417331319, lng: -122.0625463702481 }),
     []
@@ -110,7 +115,7 @@ const CustomTimeline = (props: any) => {
   useEffect(() => {
     let today = new Date();
     let next: any = null;
-    console.log(today);
+    //console.log(today);
 
     events.forEach((event) => {
       if (next == null) {
@@ -177,13 +182,7 @@ const CustomTimeline = (props: any) => {
                 );
               } else if (today.getTime() > date.getTime()) {
                 return (
-                  <a
-                    target={"_blank"}
-                    rel={"noopener noreferrer"}
-                    key={i}
-                    href={event.recording}
-                  >
-                    <div className="p-1 border border-gray-700 text-white relative w-[140px] h-[200px] rounded-lg hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-500 transition duration-300 ease-in-out">
+                  <div key={i} className="p-1 border border-gray-700 text-white relative w-[140px] h-[200px] rounded-lg hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-500 transition duration-300 ease-in-out">
                       <h1 className="text-5xl  p-1 text-yellow-300">{i + 1}</h1>
                       <div className="flex flex-col gap-1">
                         <p className="pl-1 text-sm">{event.title}</p>
@@ -215,7 +214,6 @@ const CustomTimeline = (props: any) => {
                         </div>
                       </div>
                     </div>
-                  </a>
                 );
               } else {
                 return (

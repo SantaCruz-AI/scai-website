@@ -1,6 +1,5 @@
 "use client";
 
-
 import React, { FC, useState } from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { ThemeProvider, Button } from "@material-tailwind/react";

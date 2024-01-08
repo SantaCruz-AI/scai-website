@@ -16,14 +16,9 @@ export async function POST(request: Request) {
           listID,
           subscriberHash
         );
-    
-        console.log(`This user's subscription status is ${response.status}.`);
-        
       } catch (e:any) {
         status = e.status;
         if (e.status === 404) {
-            console.log("User is not in audience.");
-          
             const addRes = await mailchimp.lists.addListMember(
                 listID,{
                     email_address: email.toLowerCase(),
