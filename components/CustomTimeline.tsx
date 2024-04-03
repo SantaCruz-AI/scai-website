@@ -12,9 +12,9 @@ const key = process.env.NEXT_PUBLIC_NOT_A_GOOGLE_API as any
 const CustomTimeline = (props: any) => {
   const events = [
     {
-      title: "Intro to NNs + Perceptron",
+      title: "Introduction to Generative Models",
       speaker: "-",
-      date: "1/9/24",
+      date: "4/3/24",
       recording:
         "/",
       slides:
@@ -22,18 +22,18 @@ const CustomTimeline = (props: any) => {
       code: "/",
     },
     {
-      title: "Neural Networks",
+      title: "Decision Trees",
       speaker: "-",
-      date: "1/16/24",
+      date: "4/10/24",
       recording:
         "/",
       slides: "/",
       code: "/",
     },
     {
-      title: "Deep Neural Networks",
+      title: "Diffusion",
       speaker: "-",
-      date: "1/23/24",
+      date: "4/17/24",
       recording:
         "/",
       slides:
@@ -41,58 +41,58 @@ const CustomTimeline = (props: any) => {
       code: "/",
     },
     {
-      title: "CNN",
+      title: "Introduction to Computer Vision",
       speaker: "-",
-      date: "1/30/24",
+      date: "4/24/24",
       recording:
         "/",
       slides: "/",
       code: "/",
     },
     {
-      title: "RNN + LSTM",
+      title: "Autonomous Vehicles",
       speaker: "-",
-      date: "2/6/24",
+      date: "5/1/24",
       recording: "/",
       slides: "/",
       code: "/",
     },
     {
-      title: "Transfer Learning",
+      title: "AI Safety",
       speaker: "-",
-      date: "2/13/24",
+      date: "5/8/24",
       recording: "/",
       slides: "/",
       code: "/",
     },
     {
-      title: "SVMs",
+      title: "TBD",
       speaker: "-",
-      date: "2/20/24",
+      date: "5/15/24",
       recording: "/",
       slides: "/",
       code: "/",
     },
     {
-      title: "AI and Ethics",
+      title: "TBD",
       speaker: "-",
-      date: "2/27/24",
+      date: "5/22/24",
       recording: "/",
       slides: "/",
       code: "/",
     },
     {
-      title: "SiNL",
+      title: "TBD",
       speaker: "-",
-      date: "3/5/24",
+      date: "5/29/24",
       recording: "/",
       slides: "/",
       code: "/",
     },
     {
-      title: "SCAI is No Limit",
+      title: "TBD",
       speaker: "-",
-      date: "3/12/24",
+      date: "6/5/24",
       recording: "/",
       slides: "/",
       code: "/",
@@ -133,10 +133,10 @@ const CustomTimeline = (props: any) => {
   return (
     <div ref={props.forwardRef} className="w-full py-2 px-3 md:px-20">
       <h1 className="text-6xl font-bold md:text-left text-center  bg-gradient-to-b from-green-300 via-blue-500 to-purple-600 bg-clip-text text-transparent py-5 ">
-        Fall Schedule
+        Spring Schedule
       </h1>
       <p className="text-white md:text-left text-center text-xl font-semibold">
-        Tuesdays 4-5pm
+        Wednesdays 5-6pm
       </p>
       <p className="text-white md:text-left text-center text-lg ">
         Location: E2-180

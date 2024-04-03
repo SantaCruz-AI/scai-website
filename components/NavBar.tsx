@@ -62,7 +62,7 @@ const Navbar: React.FC = (props: any) => {
       >
         <div className="flex items-center">
           <img src="scailogo.png" alt="" className="h-[50px] pr-3" />
-          <h1 className="font-montserrat font-bold text-4xl">SCAI.</h1>
+          <Link href='/'> <h1 className="font-montserrat font-bold text-4xl">SCAI.</h1></Link>
         </div>
 
         <div className="hidden md:flex items-center w-full">
