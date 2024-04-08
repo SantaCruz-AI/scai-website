@@ -22,7 +22,7 @@ const CustomTimeline = (props: any) => {
       code: "/",
     },
     {
-      title: "Decision Trees",
+      title: "Computer Vision",
       speaker: "-",
       date: "4/10/24",
       recording:
