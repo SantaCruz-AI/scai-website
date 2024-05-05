@@ -73,23 +73,23 @@ const Navbar: React.FC = (props: any) => {
             >
               <Link href="/">Home</Link>
             </h1>
-            <h1
+            {/* <h1
               onClick={() => {
                 scrollToSection(props.scheduleRef);
               }}
               className="cursor-pointer first-line:hover:text-amber-400 hover:opacity-100"
             >
               Schedule
-            </h1>
+            </h1> */}
             {/* <h1 className="hover:text-amber-400 hover:opacity-100">Projects</h1> */}
-            <h1
+            {/* <h1
               onClick={() => {
                 scrollToSection(props.officersRef);
               }}
               className="cursor-pointer hover:text-amber-400 hover:opacity-100"
             >
               Officers
-            </h1>
+            </h1> */}
             <h1 className="cursor-pointer hover:text-amber-400 hover:opacity-100">
               <Link href="/speakers">Speakers</Link>
             </h1>
