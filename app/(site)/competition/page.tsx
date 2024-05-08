@@ -221,6 +221,13 @@ const competition = () => {
             <li>#3: Spike NNs</li>
             <li>#4: Simulation Estimation</li>            
         </ul>
+        Fall 2023
+        <ul className="list-disc list-inside pl-5 pb-2">
+            <li>#1: NBA Oracle</li>
+            <li>#2: Poker Predict</li>
+            <li>#3: Hedge Fund Battle Royale</li>
+            <li>#4: Are Your Tweets Offensive</li>            
+        </ul>
         Winter 2024
         <ul className="list-disc list-inside pl-5 pb-2">
             <li>#1: Spam Detection</li>
