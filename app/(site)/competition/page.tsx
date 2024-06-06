@@ -200,33 +200,12 @@ const competition = () => {
         </h1>
         <h1 className="text-3xl font-bold py-5">Previous Winners</h1>
         <h1 className="text-left text-[#6A717F] text-md md:text-xl font-semibold">
-        Fall 2022
+        Spring 2024
         <ul className="list-disc list-inside pl-5 pb-2">
-            <li>#1: Fish Synthesis</li>
-            <li>#2: Gradient Visualization</li>
-            <li>#3: Earthquake Prediction</li>
-            <li>#4: Tsunami Analysis</li>            
-        </ul>
-        Winter 2023
-        <ul className="list-disc list-inside pl-5 pb-2">
-            <li>#1: Sudoku Solver</li>
-            <li>#2: Self Adjusting PID Controller</li>
-            <li>#3: Brain Tumor Classification</li>
-            <li>#4: Spike NNs</li>            
-        </ul>
-        Spring 2023
-        <ul className="list-disc list-inside pl-5 pb-2">
-            <li>#1: Playlist Generator</li>
-            <li>#2: Terrain GPT</li>
-            <li>#3: Spike NNs</li>
-            <li>#4: Simulation Estimation</li>            
-        </ul>
-        Fall 2023
-        <ul className="list-disc list-inside pl-5 pb-2">
-            <li>#1: NBA Oracle</li>
-            <li>#2: Poker Predict</li>
-            <li>#3: Hedge Fund Battle Royale</li>
-            <li>#4: Are Your Tweets Offensive</li>            
+            <li>#1: Mario Kart Image Classifier</li>
+            <li>#2: Shipment Success Predictor</li>
+            <li>#3: Cyberbullying Detector</li>
+            <li>#4: Reinforcement Learning Rainbow Snake</li>            
         </ul>
         Winter 2024
         <ul className="list-disc list-inside pl-5 pb-2">
@@ -235,8 +214,35 @@ const competition = () => {
             <li>#3: Identifying Squares</li>
             <li>#4: Classifying Cars</li>            
         </ul>
+        Fall 2023
+        <ul className="list-disc list-inside pl-5 pb-2">
+            <li>#1: NBA Oracle</li>
+            <li>#2: Poker Predict</li>
+            <li>#3: Hedge Fund Battle Royale</li>
+            <li>#4: Are Your Tweets Offensive</li>            
+        </ul>
+        Spring 2023
+        <ul className="list-disc list-inside pl-5 pb-2">
+            <li>#1: Playlist Generator</li>
+            <li>#2: Terrain GPT</li>
+            <li>#3: Spike NNs</li>
+            <li>#4: Simulation Estimation</li>            
+        </ul>
+        Winter 2023
+        <ul className="list-disc list-inside pl-5 pb-2">
+            <li>#1: Sudoku Solver</li>
+            <li>#2: Self Adjusting PID Controller</li>
+            <li>#3: Brain Tumor Classification</li>
+            <li>#4: Spike NNs</li>            
+        </ul>
+        Fall 2022
+        <ul className="list-disc list-inside pl-5 pb-2">
+            <li>#1: Fish Synthesis</li>
+            <li>#2: Gradient Visualization</li>
+            <li>#3: Earthquake Prediction</li>
+            <li>#4: Tsunami Analysis</li>            
+        </ul>
         </h1>
-
       </div>
     </div>
   );
