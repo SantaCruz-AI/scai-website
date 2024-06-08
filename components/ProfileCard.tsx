@@ -1,13 +1,15 @@
+//imports
 import React from "react";
 import { Nunito } from "next/font/google";
-
+//sets up the Nunito font with specific configurations
 const nunito = Nunito({
   subsets: ["latin"],
   variable: "--font-nunito",
   style: "normal",
   weight: ["400", "600"],
 });
-
+//typescript def profile card
+  //profile, name, and role required
 type ProfileCardProps = {
   profileImage: string;
   name: string;
@@ -17,10 +19,12 @@ type ProfileCardProps = {
   date?: string;
 };
 
+//card component
 const ProfileCard: React.FC<ProfileCardProps> = ({
   profileImage,
   name,
   role,
+  //default linkedin.png
   linkedinImage = "linkedin.png",
   linkedin,
   date,

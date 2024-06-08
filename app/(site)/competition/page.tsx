@@ -1,5 +1,6 @@
 import Navbar from "@/components/NavBar";
 import Link from "next/link";
+import Projects from "@/components/Projects";
 
 const competition = () => {
   return (
@@ -8,8 +9,8 @@ const competition = () => {
       <h1 className="pt-24 bg-gradient-to-b from-blue-300 via-green-200 to-yellow-300 bg-clip-text text-transparent text-center  px-3 md:px-20 mt-10 font-semibold text-6xl pb-5">
         SCAI is No Limit
       </h1>
-
       <div className="flex-col pt-10 text-center text-white md:max-w-[600px] max-w-[300px] w-auto mx-auto">
+        <Projects/>
         <h1 className="text-3xl font-bold pb-5">Overview</h1>
         <h1 className="text-left text-[#6A717F] text-md md:text-xl font-semibold">
           The SCAI is No Limit is an AI design competition styled similarly to a
@@ -200,13 +201,6 @@ const competition = () => {
         </h1>
         <h1 className="text-3xl font-bold py-5">Previous Winners</h1>
         <h1 className="text-left text-[#6A717F] text-md md:text-xl font-semibold">
-        Spring 2024
-        <ul className="list-disc list-inside pl-5 pb-2">
-            <li>#1: Mario Kart Image Classifier</li>
-            <li>#2: Shipment Success Predictor</li>
-            <li>#3: Cyberbullying Detector</li>
-            <li>#4: Reinforcement Learning Rainbow Snake</li>            
-        </ul>
         Winter 2024
         <ul className="list-disc list-inside pl-5 pb-2">
             <li>#1: Spam Detection</li>
