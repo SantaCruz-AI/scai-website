@@ -14,7 +14,7 @@ const CustomTimeline = (props: any) => {
     {
       title: "Introduction to Generative Models",
       speaker: "-",
-      date: "4/3/24",
+      date: "10/2/24",
       recording:
         "/",
       slides:
@@ -24,7 +24,7 @@ const CustomTimeline = (props: any) => {
     {
       title: "Computer Vision",
       speaker: "-",
-      date: "4/10/24",
+      date: "10/9/24",
       recording:
         "/",
       slides: "/",
@@ -33,7 +33,7 @@ const CustomTimeline = (props: any) => {
     {
       title: "Diffusion",
       speaker: "-",
-      date: "4/17/24",
+      date: "10/16/24",
       recording:
         "/",
       slides:
@@ -41,26 +41,18 @@ const CustomTimeline = (props: any) => {
       code: "/",
     },
     {
-      title: "Introduction to Computer Vision",
+      title: "TBD",
       speaker: "-",
-      date: "4/24/24",
+      date: "10/23/24",
       recording:
         "/",
       slides: "/",
       code: "/",
     },
     {
-      title: "Autonomous Vehicles",
+      title: "TBD",
       speaker: "-",
-      date: "5/1/24",
-      recording: "/",
-      slides: "/",
-      code: "/",
-    },
-    {
-      title: "AI Safety",
-      speaker: "-",
-      date: "5/8/24",
+      date: "10/30/24",
       recording: "/",
       slides: "/",
       code: "/",
@@ -68,7 +60,7 @@ const CustomTimeline = (props: any) => {
     {
       title: "TBD",
       speaker: "-",
-      date: "5/15/24",
+      date: "11/6/24",
       recording: "/",
       slides: "/",
       code: "/",
@@ -76,7 +68,7 @@ const CustomTimeline = (props: any) => {
     {
       title: "TBD",
       speaker: "-",
-      date: "5/22/24",
+      date: "11/13/24",
       recording: "/",
       slides: "/",
       code: "/",
@@ -84,7 +76,7 @@ const CustomTimeline = (props: any) => {
     {
       title: "TBD",
       speaker: "-",
-      date: "5/29/24",
+      date: "11/20/24",
       recording: "/",
       slides: "/",
       code: "/",
@@ -92,7 +84,15 @@ const CustomTimeline = (props: any) => {
     {
       title: "TBD",
       speaker: "-",
-      date: "6/5/24",
+      date: "11/27/24",
+      recording: "/",
+      slides: "/",
+      code: "/",
+    },
+    {
+      title: "TBD",
+      speaker: "-",
+      date: "12/4/24",
       recording: "/",
       slides: "/",
       code: "/",
@@ -133,10 +133,10 @@ const CustomTimeline = (props: any) => {
   return (
     <div ref={props.forwardRef} className="w-full py-2 px-3 md:px-20">
       <h1 className="text-6xl font-bold md:text-left text-center  bg-gradient-to-b from-green-300 via-blue-500 to-purple-600 bg-clip-text text-transparent py-5 ">
-        Spring Schedule
+        Fall Schedule
       </h1>
       <p className="text-white md:text-left text-center text-xl font-semibold">
-        Wednesdays 5-6pm
+        Wednesdays 4-5pm
       </p>
       <p className="text-white md:text-left text-center text-lg ">
         Location: E2-180
