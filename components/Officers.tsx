@@ -13,82 +13,64 @@ const Officers = (props: any) => {
       </h1>
       <div className="flex flex-wrap md:gap-20 justify-center max-w-[1300px] mx-auto">
         <ProfileCard
-          profileImage="profilePics/Officers/rahul.jpeg"
-          name="Rahul Nadkarni"
-          role="Co-President"
-          linkedin="https://www.linkedin.com/in/rahul-nadkarni-74475015a/"
-        />
-        <ProfileCard
-          profileImage="profilePics/Officers/jonathan.jpg"
-          name="Jonathan Vengosh"
-          role="Co-President"
-          linkedin="https://www.linkedin.com/in/jonathan-vengosh-5084a6203/"
-        />{" "}
-        <ProfileCard
-          profileImage="profilePics/Officers/coen.jpg"
-          name="Coen Adler"
-          role="Head of Instruction"
-          linkedin="https://www.linkedin.com/in/coen-adler"
-        />
-        <ProfileCard
-          profileImage="profilePics/Officers/andrew.jpeg"
-          name="Andrew Kato"
-          role="Instructor"
-          linkedin="https://linkedin.com/in/andrewkato"
-        />
-        <ProfileCard
-          profileImage="profilePics/Officers/kevin.jpg"
+          profileImage="profilePics/Officers/kevin.png"
           name="Kevin Bachelor"
-          role="SCAI is no Limit Competition Manager"
+          role="President"
           linkedin="https://www.linkedin.com/in/kevin-bachelor-585603283"
         />{" "}
         <ProfileCard
-          profileImage="profilePics/Officers/vishruth.jpg"
-          name="Vishruth Bharath"
-          role="Brain Teaser Competition Manager"
-          linkedin="https://www.linkedin.com/in/vishb/"
+          profileImage="profilePics/Officers/ruthwika.png"
+          name="Ruthwika Gajjala"
+          role="Head of Instruction"
+          linkedin="https://www.linkedin.com/in/ruthwika-gajjala/"
         />
         <ProfileCard
-          profileImage="profilePics/Officers/aanchel.jpg"
-          name="Aanchel Shimkhada"
-          role="Head of Marketing"
-          linkedin="https://www.linkedin.com/in/aanchel-shimkhada"
-        />{" "}
+          profileImage="profilePics/Officers/dylan.jpg"
+          name="Dylan Louie"
+          role="Instructor"
+          linkedin="https://www.linkedin.com/in/dylanlouie/"
+        />
         <ProfileCard
-          profileImage="profilePics/Officers/rishika.jpg"
+          profileImage="profilePics/Officers/rishika.jpeg"
           name="Rishika Srinivas"
-          role="Outreach / Fundraising Manager"
-          linkedin="https://www.linkedin.com/in/rishika-srinivas-a73098247/"
+          role="Instructor"
+          linkedin="https://www.linkedin.com/in/rishikasrinivas/"
+        />
+        <ProfileCard
+          profileImage="profilePics/Officers/eric.jpg"
+          name="Eric Kimbrell"
+          role="Instructor"
+          linkedin="https://www.linkedin.com/in/ericnkimbrell/"
+        />
+        <ProfileCard
+          profileImage="profilePics/Officers/aashna.jpg"
+          name="Aashna Shimkhada"
+          role="Head of Finance"
+          linkedin="https://www.linkedin.com/in/aashna-shimkhada/"
         />{" "}
         <ProfileCard
-          profileImage="profilePics/Officers/ananth.jpg"
-          name='Anath "Ant" Srikanth'
-          role="Events Manager"
-          linkedin="https://www.linkedin.com/in/ananthajit-srikanth-011519262/"
-        />
-        <ProfileCard
-          profileImage="profilePics/Officers/neel.jpg"
-          name="Neel Walse"
-          role="Graphics Officer"
-          linkedin="https://www.linkedin.com/in/neel-walse/"
-        />
-        <ProfileCard
-          profileImage="profilePics/Officers/harish.jpg"
-          name="Harish Dukkipati"
-          role="Financial Advisor"
-          linkedin="https://www.linkedin.com/in/harish-dukkipati/"
+          profileImage="profilePics/Officers/anshul.jpg"
+          name="Anshul Kolli"
+          role="Marketing and Finance Officer"
+          linkedin="https://www.linkedin.com/in/anshul-kolli-1381a2294/"
         />{" "}
         <ProfileCard
-          profileImage="profilePics/Officers/brandon.jpg"
-          name="Brandon Castro"
-          role="Creative Director / Web-Dev"
-          linkedin="https://www.linkedin.com/in/brandon-castro22/"
+          profileImage="profilePics/Officers/anthony.jpg"
+          name="Anthony Furman"
+          role="Competitions Lead"
+          linkedin="https://www.linkedin.com/in/anthony-furman/"
+        />{" "}
+        <ProfileCard
+          profileImage="profilePics/Officers/ivan.jpg"
+          name='Ivan Del Rio'
+          role="SCAI is No Limit Officer"
+          linkedin="https://www.linkedin.com/in/ivanndelrio/"
         />
         <ProfileCard
-          profileImage="profilePics/Officers/oliver.jpg"
-          name="Oliver Lokhandwala"
+          profileImage="profilePics/Officers/neha.jpg"
+          name="Neha Ashwin"
           role="Webmaster"
-          linkedin="https://www.linkedin.com/in/oliver-lokhandwala/"
+          linkedin="https://www.linkedin.com/in/nehashwin/"
         />{" "}
       </div>
     </div>
