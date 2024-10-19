@@ -12,7 +12,7 @@ const key = process.env.NEXT_PUBLIC_NOT_A_GOOGLE_API as any
 const CustomTimeline = (props: any) => {
   const events = [
     {
-      title: "Introduction to Generative Models",
+      title: "Club Introduction",
       speaker: "-",
       date: "10/2/24",
       recording:
@@ -22,7 +22,7 @@ const CustomTimeline = (props: any) => {
       code: "/",
     },
     {
-      title: "Computer Vision",
+      title: "Introduction to AI/ML",
       speaker: "-",
       date: "10/9/24",
       recording:
@@ -31,7 +31,7 @@ const CustomTimeline = (props: any) => {
       code: "/",
     },
     {
-      title: "Diffusion",
+      title: "Linear Regression",
       speaker: "-",
       date: "10/16/24",
       recording:
@@ -41,7 +41,7 @@ const CustomTimeline = (props: any) => {
       code: "/",
     },
     {
-      title: "TBD",
+      title: "Naive Bayes Theorem",
       speaker: "-",
       date: "10/23/24",
       recording:
@@ -50,7 +50,7 @@ const CustomTimeline = (props: any) => {
       code: "/",
     },
     {
-      title: "TBD",
+      title: "K Nearest Neighbors",
       speaker: "-",
       date: "10/30/24",
       recording: "/",
@@ -58,7 +58,7 @@ const CustomTimeline = (props: any) => {
       code: "/",
     },
     {
-      title: "TBD",
+      title: "DTs",
       speaker: "-",
       date: "11/6/24",
       recording: "/",
@@ -66,7 +66,7 @@ const CustomTimeline = (props: any) => {
       code: "/",
     },
     {
-      title: "TBD",
+      title: "Perceptrons",
       speaker: "-",
       date: "11/13/24",
       recording: "/",
@@ -74,7 +74,7 @@ const CustomTimeline = (props: any) => {
       code: "/",
     },
     {
-      title: "TBD",
+      title: "Practical Uses of AI",
       speaker: "-",
       date: "11/20/24",
       recording: "/",
@@ -82,15 +82,7 @@ const CustomTimeline = (props: any) => {
       code: "/",
     },
     {
-      title: "TBD",
-      speaker: "-",
-      date: "11/27/24",
-      recording: "/",
-      slides: "/",
-      code: "/",
-    },
-    {
-      title: "TBD",
+      title: "SCAI is No Limit",
       speaker: "-",
       date: "12/4/24",
       recording: "/",
