@@ -12,9 +12,9 @@ const key = process.env.NEXT_PUBLIC_NOT_A_GOOGLE_API as any
 const CustomTimeline = (props: any) => {
   const events = [
     {
-      title: "Club Introduction",
-      speaker: "-",
-      date: "10/2/24",
+      title: "Intro to Neural Networks",
+      speaker: "Rishika Srinivas",
+      date: "1/8/25",
       recording:
         "/",
       slides:
@@ -22,18 +22,18 @@ const CustomTimeline = (props: any) => {
       code: "/",
     },
     {
-      title: "Introduction to AI/ML",
-      speaker: "-",
-      date: "10/9/24",
+      title: "Deep Neural Networks",
+      speaker: "Ruthwika Gajjala",
+      date: "1/15/25",
       recording:
         "/",
       slides: "/",
       code: "/",
     },
     {
-      title: "Linear Regression",
-      speaker: "-",
-      date: "10/16/24",
+      title: "CNNs",
+      speaker: "Ruthwika Gajjala",
+      date: "1/22/25",
       recording:
         "/",
       slides:
@@ -41,50 +41,58 @@ const CustomTimeline = (props: any) => {
       code: "/",
     },
     {
-      title: "Naive Bayes Theorem",
-      speaker: "-",
-      date: "10/23/24",
+      title: "RNNs",
+      speaker: "Dylan Louie",
+      date: "1/29/25",
       recording:
         "/",
       slides: "/",
       code: "/",
     },
     {
-      title: "K Nearest Neighbors",
-      speaker: "-",
-      date: "10/30/24",
+      title: "Long Short-Term Memory",
+      speaker: "Rishika Srinivas",
+      date: "2/5/25",
       recording: "/",
       slides: "/",
       code: "/",
     },
     {
-      title: "DTs",
-      speaker: "-",
-      date: "11/6/24",
+      title: "Large Language Models",
+      speaker: "Anthony Furman",
+      date: "2/19/25",
       recording: "/",
       slides: "/",
       code: "/",
     },
     {
-      title: "Perceptrons",
-      speaker: "-",
-      date: "11/13/24",
+      title: "Transformers",
+      speaker: "Eric Kimbrell",
+      date: "2/26/25",
+      recording: "/",
+      slides: "/",
+      code: "/",
+    },
+    {
+      title: "RL / Q-Learning",
+      speaker: "Dylan Louie",
+      date: "2/12/25",
       recording: "/",
       slides: "/",
       code: "/",
     },
     {
       title: "Practical Uses of AI",
-      speaker: "-",
-      date: "11/20/24",
+      speaker: "Eric Kimbrell",
+      date: "3/5/25",
       recording: "/",
       slides: "/",
       code: "/",
     },
     {
       title: "SCAI is No Limit",
-      speaker: "-",
-      date: "12/4/24",
+      speaker: "",
+      date: "3/12/25",
       recording: "/",
       slides: "/",
       code: "/",
@@ -125,7 +133,7 @@ const CustomTimeline = (props: any) => {
   return (
     <div ref={props.forwardRef} className="w-full py-2 px-3 md:px-20">
       <h1 className="text-6xl font-bold md:text-left text-center  bg-gradient-to-b from-green-300 via-blue-500 to-purple-600 bg-clip-text text-transparent py-5 ">
-        Fall Schedule
+        Winter Schedule
       </h1>
       <p className="text-white md:text-left text-center text-xl font-semibold">
         Wednesdays 4-5pm
