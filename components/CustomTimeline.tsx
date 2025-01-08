@@ -136,7 +136,7 @@ const CustomTimeline = (props: any) => {
         Winter Schedule
       </h1>
       <p className="text-white md:text-left text-center text-xl font-semibold">
-        Wednesdays 4-5pm
+        Wednesdays 1-2pm
       </p>
       <p className="text-white md:text-left text-center text-lg ">
         Location: E2-180
