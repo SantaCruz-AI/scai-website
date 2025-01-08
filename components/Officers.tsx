@@ -55,6 +55,12 @@ const Officers = (props: any) => {
           linkedin="https://www.linkedin.com/in/ananth-srikanth/"
         />{" "}
         <ProfileCard
+          profileImage="profilePics/Officers/clara.jpg"
+          name="Clara Sapugay"
+          role="Marketing Officer"
+          linkedin="https://www.linkedin.com/in/clara-sapugay/"
+        />{" "}
+        <ProfileCard
           profileImage="profilePics/Officers/anshul.jpg"
           name="Anshul Kolli"
           role="Marketing and Finance Officer"
