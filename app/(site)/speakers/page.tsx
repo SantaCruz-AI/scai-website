@@ -11,36 +11,36 @@ const speakers = () => {
       </h1>
 
         
-      {/* <div className="flex flex-wrap md:gap-20 justify-center max-w-[1300px] mx-auto">
+      {<div className="flex flex-wrap md:gap-20 justify-center max-w-[1300px] mx-auto">
         <ProfileCard
-          profileImage="profilePics/Jesse.jpeg"
-          name="Prof. Jesse Thomason"
-          role="Robotics/NLP Integration Research at USC"
-          date="October 19th"
-          linkedin="https://www.linkedin.com/in/jesse-thomason-034746171/"
+          profileImage="profilePics/Speakers/Jason-Eshrag.jpeg"
+          name="Dr. Jason Eshragian"
+          role="Neuromorphic Computing"
+          date="November 20th"
+          linkedin="https://www.linkedin.com/in/jason-eshraghian-9a49497a/"
         />
-        <ProfileCard
-          profileImage="profilePics/janesh.jpeg"
+        {/* <ProfileCard
+          profileImage="profilePics/Speakers/janesh.jpeg"
           name="Janesh Chhabra"
           role="Senior Software Engineer at AWS"
           date="October 26th"
           linkedin="https://www.linkedin.com/in/janeshchhabra/"
         />
         <ProfileCard
-          profileImage="profilePics/kumar.jpeg"
+          profileImage="profilePics/Speakers/kumar.jpeg"
           name="Kumar Chivukula"
           role="Co-Founder and CEO of Opsera"
           linkedin="https://www.linkedin.com/in/kumar-chivukula/"
           date="November 16th"
         />
         <ProfileCard
-          profileImage="profilePics/alexander.jpeg"
+          profileImage="profilePics/Speakers/alexander.jpeg"
           name="Alexander Lerch"
           role="Professor at Georgia Tech"
           linkedin="https://www.linkedin.com/in/lerch/"
           date="November 30th"
-        />
-      </div> */}
+        />  */}
+      </div> }
     </div>
   );
 };
