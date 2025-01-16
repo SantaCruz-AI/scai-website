@@ -16,7 +16,7 @@ const CustomTimeline = (props: any) => {
       speaker: "Rishika Srinivas",
       date: "1/8/25",
       recording:
-        "/",
+        "https://drive.google.com/file/d/1mrkCJfDBtvu4k0TqPhnEedQW6QZ2sVP5/view?usp=share_link",
       slides:
         "https://docs.google.com/presentation/d/1x3LtGShRxofCAhRmQ-Rh5KKDUF0q1I-q9hIUDq1pB1Y/edit?usp=sharing",
       code: "/",
@@ -26,7 +26,7 @@ const CustomTimeline = (props: any) => {
       speaker: "Ruthwika Gajjala",
       date: "1/15/25",
       recording:
-        "/",
+        "https://drive.google.com/file/d/16ixB1b0JV8Mk7jm1JUMWnoyP7vcexauh/view?usp=sharing",
       slides: "https://docs.google.com/presentation/d/1M6GMKuBTPeU_NgkiRM_E7tK3Ms0AFM66Veiwl1S0B9M/edit?usp=sharing",
       code: "/",
     },
