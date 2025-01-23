@@ -37,7 +37,7 @@ const CustomTimeline = (props: any) => {
       recording:
         "/",
       slides:
-        "/",
+        "https://docs.google.com/presentation/d/1Z6Jl36uVygF4B6fZFnYJXIyg08RCbF8w8GHQXh-tIDc/edit?usp=sharing",
       code: "/",
     },
     {
