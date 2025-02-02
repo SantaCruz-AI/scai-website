@@ -45,8 +45,8 @@ const CustomTimeline = (props: any) => {
       speaker: "Dylan Louie",
       date: "1/29/25",
       recording:
-        "/",
-      slides: "https://drive.google.com/file/d/1xP0ROqHSi-F9cOS0JI_u2ANv6lLqixZB/view?usp=sharing",
+        "https://drive.google.com/file/d/1xP0ROqHSi-F9cOS0JI_u2ANv6lLqixZB/view?usp=sharing",
+      slides: "https://docs.google.com/presentation/d/1UWni0AN66wUQgjsup9cf1Rra05eOp2EoR_64MP1Qob4/edit?usp=share_link",
       code: "/",
     },
     {
