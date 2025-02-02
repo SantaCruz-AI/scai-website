@@ -35,7 +35,7 @@ const CustomTimeline = (props: any) => {
       speaker: "Ruthwika Gajjala",
       date: "1/22/25",
       recording:
-        "/",
+        "https://drive.google.com/file/d/1w6humZjDIq3ydwhMZ3dw_wvYZA2BT0tv/view?usp=sharing",
       slides:
         "https://docs.google.com/presentation/d/1Z6Jl36uVygF4B6fZFnYJXIyg08RCbF8w8GHQXh-tIDc/edit?usp=sharing",
       code: "/",
@@ -46,7 +46,7 @@ const CustomTimeline = (props: any) => {
       date: "1/29/25",
       recording:
         "/",
-      slides: "/",
+      slides: "https://drive.google.com/file/d/1xP0ROqHSi-F9cOS0JI_u2ANv6lLqixZB/view?usp=sharing",
       code: "/",
     },
     {
