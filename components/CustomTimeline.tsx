@@ -12,87 +12,87 @@ const key = process.env.NEXT_PUBLIC_NOT_A_GOOGLE_API as any
 const CustomTimeline = (props: any) => {
   const events = [
     {
-      title: "Intro to Neural Networks",
-      speaker: "Rishika Srinivas",
-      date: "1/8/25",
-      recording:
-        "https://drive.google.com/file/d/1mrkCJfDBtvu4k0TqPhnEedQW6QZ2sVP5/view?usp=share_link",
-      slides:
-        "https://docs.google.com/presentation/d/1x3LtGShRxofCAhRmQ-Rh5KKDUF0q1I-q9hIUDq1pB1Y/edit?usp=sharing",
-      code: "/",
-    },
-    {
-      title: "Deep Neural Networks",
+      title: "VAEs",
       speaker: "Ruthwika Gajjala",
-      date: "1/15/25",
+      date: "3/31/25",
       recording:
-        "https://drive.google.com/file/d/16ixB1b0JV8Mk7jm1JUMWnoyP7vcexauh/view?usp=sharing",
-      slides: "https://docs.google.com/presentation/d/1M6GMKuBTPeU_NgkiRM_E7tK3Ms0AFM66Veiwl1S0B9M/edit?usp=sharing",
-      code: "/",
-    },
-    {
-      title: "CNNs",
-      speaker: "Ruthwika Gajjala",
-      date: "1/22/25",
-      recording:
-        "https://drive.google.com/file/d/1w6humZjDIq3ydwhMZ3dw_wvYZA2BT0tv/view?usp=sharing",
+        "/",
       slides:
-        "https://docs.google.com/presentation/d/1Z6Jl36uVygF4B6fZFnYJXIyg08RCbF8w8GHQXh-tIDc/edit?usp=sharing",
-      code: "/",
+        "https://docs.google.com/presentation/d/1rIl-5ywh3C3gxoUZj83cbmktlmzRjMNiyqNuaK7nT-s/edit?usp=sharing",
+      code: "https://colab.research.google.com/drive/1RSQaAK0o9d1epuG9JsdJpy9izaAewWrL?usp=sharing",
     },
     {
-      title: "RNNs",
-      speaker: "Dylan Louie",
-      date: "1/29/25",
+      title: "Diffusion",
+      speaker: "Eric Kimbrell",
+      date: "4/7/25",
       recording:
-        "https://drive.google.com/file/d/1xP0ROqHSi-F9cOS0JI_u2ANv6lLqixZB/view?usp=sharing",
-      slides: "https://docs.google.com/presentation/d/1UWni0AN66wUQgjsup9cf1Rra05eOp2EoR_64MP1Qob4/edit?usp=share_link",
+        "/",
+      slides: "/",
       code: "/",
     },
     {
-      title: "Long Short-Term Memory",
+      title: "RAG",
       speaker: "Rishika Srinivas",
-      date: "2/5/25",
-      recording: "/",
-      slides: "/",
+      date: "4/14/25",
+      recording:
+        "/",
+      slides:
+        "/",
       code: "/",
     },
     {
-      title: "Large Language Models",
-      speaker: "Anthony Furman",
-      date: "2/19/25",
-      recording: "/",
-      slides: "/",
-      code: "/",
-    },
-    {
-      title: "Transformers",
+      title: "Agentic AI",
       speaker: "Eric Kimbrell",
-      date: "2/26/25",
+      date: "4/21/25",
+      recording:
+        "/",
+      slides: "/",
+      code: "/",
+    },
+    {
+      title: "GANs",
+      speaker: "Rishika Srinivas",
+      date: "4/28/25",
       recording: "/",
       slides: "/",
       code: "/",
     },
     {
-      title: "RL / Q-Learning",
+      title: "SNNs",
       speaker: "Dylan Louie",
-      date: "2/12/25",
+      date: "5/5/25",
       recording: "/",
       slides: "/",
       code: "/",
     },
     {
-      title: "Practical Uses of AI",
-      speaker: "Eric Kimbrell",
-      date: "3/5/25",
+      title: "GNNs",
+      speaker: "Ruthwika Gajjala",
+      date: "5/12/25",
+      recording: "/",
+      slides: "/",
+      code: "/",
+    },
+    {
+      title: "Transfer Learning",
+      speaker: "Dylan Louie",
+      date: "5/19/25",
       recording: "/",
       slides: "/",
       code: "/",
     },
     {
       title: "SCAI is No Limit",
+      speaker: "Anthony Furman",
+      date: "5/26/25",
+      recording: "/",
+      slides: "/",
+      code: "/",
+    },
+    {
+      title: "AI Research",
       speaker: "",
-      date: "3/12/25",
+      date: "6/2/25",
       recording: "/",
       slides: "/",
       code: "/",
@@ -133,10 +133,10 @@ const CustomTimeline = (props: any) => {
   return (
     <div ref={props.forwardRef} className="w-full py-2 px-3 md:px-20">
       <h1 className="text-6xl font-bold md:text-left text-center  bg-gradient-to-b from-green-300 via-blue-500 to-purple-600 bg-clip-text text-transparent py-5 ">
-        Winter Schedule
+        Spring Schedule
       </h1>
       <p className="text-white md:text-left text-center text-xl font-semibold">
-        Wednesdays 4-5pm
+        Mondays 12-1pm
       </p>
       <p className="text-white md:text-left text-center text-lg ">
         Location: E2-180
