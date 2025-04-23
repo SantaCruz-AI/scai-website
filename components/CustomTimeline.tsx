@@ -27,26 +27,26 @@ const CustomTimeline = (props: any) => {
       date: "4/7/25",
       recording:
         "/",
-      slides: "/",
+      slides: "https://docs.google.com/presentation/d/1YGFb9RJjCZhe3drQu3CfcoL5JaxVVE-RYETTWG5p8Q0/edit?usp=share_link",
       code: "/",
     },
     {
-      title: "RAG",
-      speaker: "Rishika Srinivas",
+      title: "SNNs",
+      speaker: "Dylan Louie",
       date: "4/14/25",
       recording:
         "/",
       slides:
-        "/",
+        "https://docs.google.com/presentation/d/1n3_Wbto5XNZPfVxmlwSLo5AUfNJDo3zTP-_0OSPOYkw/edit?usp=share_link",
       code: "/",
     },
     {
-      title: "Agentic AI",
-      speaker: "Eric Kimbrell",
+      title: "RAGs",
+      speaker: "Rishika Srinivas",
       date: "4/21/25",
       recording:
         "/",
-      slides: "/",
+      slides: "https://docs.google.com/presentation/d/1hYklc4PFgKUiXeJtikt6QxkIOyG4hoObefql3vw5pV4/edit?usp=share_link",
       code: "/",
     },
     {
@@ -54,7 +54,7 @@ const CustomTimeline = (props: any) => {
       speaker: "Rishika Srinivas",
       date: "4/28/25",
       recording: "/",
-      slides: "/",
+      slides: "https://docs.google.com/presentation/d/1hYklc4PFgKUiXeJtikt6QxkIOyG4hoObefql3vw5pV4/edit?usp=share_link",
       code: "/",
     },
     {
