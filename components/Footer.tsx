@@ -10,6 +10,9 @@ const Footer = () => {
       <Typography className="text-center font-normal">
         &copy; 2024 Santa Cruz Artificial Intelligence
       </Typography>
+      <Typography className="text-center font-normal">
+      This group is open to all students consistent with state and federal law, the UC Nondiscrimination Statement and the Nondiscrimination Policy Statement for University of California Publications Regarding Student-Related Matters.
+      </Typography>
     </footer>
   );
 };
