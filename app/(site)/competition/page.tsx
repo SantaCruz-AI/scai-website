@@ -201,6 +201,13 @@ const competition = () => {
         </h1>
         <h1 className="text-3xl font-bold py-5">Previous Winners</h1>
         <h1 className="text-left text-[#6A717F] text-md md:text-xl font-semibold">
+        Fall 2024
+        <ul className="list-disc list-inside pl-5 pb-2">
+            <li>#1: Mario Kart Image Classifier</li>
+            <li>#2: Shipment Success Predictor</li>
+            <li>#3: Cyberbullying Detector</li>
+            <li>#4: Reinforcement Learning Rainbow Snake</li>            
+        </ul>
         Winter 2024
         <ul className="list-disc list-inside pl-5 pb-2">
             <li>#1: Spam Detection</li>
