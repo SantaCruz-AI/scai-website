@@ -12,87 +12,87 @@ const key = process.env.NEXT_PUBLIC_NOT_A_GOOGLE_API as any
 const CustomTimeline = (props: any) => {
   const events = [
     {
-      title: "VAEs",
-      speaker: "Ruthwika Gajjala",
-      date: "3/31/25",
+      title: "Welcome to SCAI!",
+      speaker: "-",
+      date: "10/01/25",
       recording:
         "/",
       slides:
-        "https://docs.google.com/presentation/d/1rIl-5ywh3C3gxoUZj83cbmktlmzRjMNiyqNuaK7nT-s/edit?usp=sharing",
-      code: "https://colab.research.google.com/drive/1RSQaAK0o9d1epuG9JsdJpy9izaAewWrL?usp=sharing",
-    },
-    {
-      title: "Diffusion",
-      speaker: "Eric Kimbrell",
-      date: "4/7/25",
-      recording:
         "/",
-      slides: "https://docs.google.com/presentation/d/1YGFb9RJjCZhe3drQu3CfcoL5JaxVVE-RYETTWG5p8Q0/edit?usp=share_link",
       code: "/",
     },
     {
-      title: "SNNs",
-      speaker: "Dylan Louie",
-      date: "4/14/25",
+      title: "Week 2: ",
+      speaker: "-",
+      date: "10/8/25",
+      recording:
+        "/",
+      slides: "/",
+      code: "/",
+    },
+    {
+      title: "Week 3: ",
+      speaker: "-",
+      date: "10/15/25",
       recording:
         "/",
       slides:
-        "https://docs.google.com/presentation/d/1n3_Wbto5XNZPfVxmlwSLo5AUfNJDo3zTP-_0OSPOYkw/edit?usp=share_link",
+        "/",
       code: "/",
     },
     {
-      title: "RAGs",
-      speaker: "Rishika Srinivas",
-      date: "4/21/25",
+      title: "Week 4: ",
+      speaker: "-",
+      date: "10/22/25",
       recording:
         "/",
-      slides: "https://docs.google.com/presentation/d/1hYklc4PFgKUiXeJtikt6QxkIOyG4hoObefql3vw5pV4/edit?usp=share_link",
+      slides: "/",
       code: "/",
     },
     {
-      title: "GANs",
-      speaker: "Rishika Srinivas",
-      date: "4/28/25",
-      recording: "/",
-      slides: "https://docs.google.com/presentation/d/1hYklc4PFgKUiXeJtikt6QxkIOyG4hoObefql3vw5pV4/edit?usp=share_link",
-      code: "/",
-    },
-    {
-      title: "SNNs",
-      speaker: "Dylan Louie",
-      date: "5/5/25",
+      title: "Week 5: ",
+      speaker: "-",
+      date: "10/29/25",
       recording: "/",
       slides: "/",
       code: "/",
     },
     {
-      title: "GNNs",
-      speaker: "Ruthwika Gajjala",
-      date: "5/12/25",
+      title: "Week 6: ",
+      speaker: "-",
+      date: "11/5/25",
       recording: "/",
       slides: "/",
       code: "/",
     },
     {
-      title: "Transfer Learning",
-      speaker: "Dylan Louie",
-      date: "5/19/25",
+      title: "Week 7: ",
+      speaker: "-",
+      date: "11/12/25",
       recording: "/",
       slides: "/",
       code: "/",
     },
     {
-      title: "SCAI is No Limit",
-      speaker: "Anthony Furman",
-      date: "5/26/25",
+      title: "Week 8: ",
+      speaker: "-",
+      date: "11/19/25",
       recording: "/",
       slides: "/",
       code: "/",
     },
     {
-      title: "AI Research",
-      speaker: "",
-      date: "6/2/25",
+      title: "Week 9: ",
+      speaker: "-",
+      date: "11/26/25",
+      recording: "/",
+      slides: "/",
+      code: "/",
+    },
+    {
+      title: "Week 10: ",
+      speaker: "-",
+      date: "12/3/25",
       recording: "/",
       slides: "/",
       code: "/",
@@ -132,11 +132,11 @@ const CustomTimeline = (props: any) => {
 
   return (
     <div ref={props.forwardRef} className="w-full py-2 px-3 md:px-20">
-      <h1 className="text-6xl font-bold md:text-left text-center  bg-gradient-to-b from-green-300 via-blue-500 to-purple-600 bg-clip-text text-transparent py-5 ">
-        Spring Schedule
+      <h1 className="text-6xl font-bold md:text-left text-center  bg-gradient-to-b from-red-800 via-orange-500 to-red-700 bg-clip-text text-transparent py-5 ">
+        Fall Schedule
       </h1>
       <p className="text-white md:text-left text-center text-xl font-semibold">
-        Mondays 12-1pm
+        Wednesdays 3-4pm
       </p>
       <p className="text-white md:text-left text-center text-lg ">
         Location: E2-180
