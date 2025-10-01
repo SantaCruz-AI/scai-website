@@ -12,18 +12,18 @@ const key = process.env.NEXT_PUBLIC_NOT_A_GOOGLE_API as any
 const CustomTimeline = (props: any) => {
   const events = [
     {
-      title: "Welcome to SCAI!",
-      speaker: "-",
+      title: "Intro to SCAI",
+      speaker: "",
       date: "10/01/25",
       recording:
-        "/",
+        "",
       slides:
-        "/",
-      code: "/",
+        "",
+      code: "",
     },
     {
-      title: "Week 2: ",
-      speaker: "-",
+      title: "Intro to AI/ML",
+      speaker: "",
       date: "10/8/25",
       recording:
         "/",
@@ -31,8 +31,8 @@ const CustomTimeline = (props: any) => {
       code: "/",
     },
     {
-      title: "Week 3: ",
-      speaker: "-",
+      title: "Linear Regression",
+      speaker: "",
       date: "10/15/25",
       recording:
         "/",
@@ -41,8 +41,8 @@ const CustomTimeline = (props: any) => {
       code: "/",
     },
     {
-      title: "Week 4: ",
-      speaker: "-",
+      title: "Naive Bayes",
+      speaker: "",
       date: "10/22/25",
       recording:
         "/",
@@ -50,48 +50,48 @@ const CustomTimeline = (props: any) => {
       code: "/",
     },
     {
-      title: "Week 5: ",
-      speaker: "-",
+      title: "KNN/Clustering",
+      speaker: "",
       date: "10/29/25",
       recording: "/",
       slides: "/",
       code: "/",
     },
     {
-      title: "Week 6: ",
-      speaker: "-",
+      title: "Decision Trees",
+      speaker: "",
       date: "11/5/25",
       recording: "/",
       slides: "/",
       code: "/",
     },
     {
-      title: "Week 7: ",
-      speaker: "-",
+      title: "Perceptron",
+      speaker: "",
       date: "11/12/25",
       recording: "/",
       slides: "/",
       code: "/",
     },
     {
-      title: "Week 8: ",
-      speaker: "-",
+      title: "Intro to Neural Networks",
+      speaker: "",
       date: "11/19/25",
       recording: "/",
       slides: "/",
       code: "/",
     },
     {
-      title: "Week 9: ",
-      speaker: "-",
+      title: "Thanksgiving Holiday",
+      speaker: "",
       date: "11/26/25",
       recording: "/",
       slides: "/",
       code: "/",
     },
     {
-      title: "Week 10: ",
-      speaker: "-",
+      title: "SCAI's No Limit",
+      speaker: "",
       date: "12/3/25",
       recording: "/",
       slides: "/",
@@ -128,7 +128,7 @@ const CustomTimeline = (props: any) => {
     });
 
     setUpNext(next);
-  }, []);
+  }, []); // Runs on UI mount
 
   return (
     <div ref={props.forwardRef} className="w-full py-2 px-3 md:px-20">

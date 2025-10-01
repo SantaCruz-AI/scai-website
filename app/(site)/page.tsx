@@ -32,7 +32,7 @@ export default function Home() {
             </h1>
             <div className="sans text-[#93989D] md:text-base text-sm flex max-w-md gap-4 font-semi pb-5">
               <h1>
-                UCSC's leading AI Club to discover Machine Learning &
+                UCSC&apos;s leading AI Club to discover Machine Learning &
                 Artificial Intelligence through engaging lectures, projects, and
                 expert talks.{" "}
               </h1>
