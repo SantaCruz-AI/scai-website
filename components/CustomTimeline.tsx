@@ -13,41 +13,41 @@ const CustomTimeline = (props: any) => {
   const events = [
     {
       title: "Intro to SCAI",
-      speaker: "",
+      speaker: "Kevin Bachelor",
       date: "10/01/25",
       recording:
-        "",
+        "https://drive.google.com/file/d/1YpjeNnfPJgFBkD8F9EM5391qvu1QCz9f/view?usp=sharing",
       slides:
-        "",
+        "https://docs.google.com/presentation/d/1ZDWSmbd80KsodTzcRCFm79HPw6MSnenzJq67kwRWieU/edit?usp=sharing",
       code: "",
     },
     {
       title: "Intro to AI/ML",
-      speaker: "",
+      speaker: "Eric Kimbrell",
       date: "10/8/25",
       recording:
         "/",
-      slides: "/",
+      slides: "https://docs.google.com/presentation/d/13zBqPJhXvWE6SrrmB05N5Sn8CEITqiN9sRbxuwi1r98/edit?usp=sharing",
       code: "/",
     },
     {
       title: "Linear Regression",
-      speaker: "",
+      speaker: "Eric Honer",
       date: "10/15/25",
       recording:
-        "/",
+        "https://drive.google.com/file/d/1hUue4fqrKQv5NKbTuFIT8SJ7AuTB-NTz/view?usp=sharing",
       slides:
-        "/",
-      code: "/",
+        "https://docs.google.com/presentation/d/1onb5ca0g824b4Id-ZnHnJ3L3wmCe1_JnvyAxBAmCy18/edit?usp=sharing",
+      code: "https://colab.research.google.com/drive/1Xp-uCe0DWkSNze1NshDBGVeNUglAxd9o?usp=sharing",
     },
     {
       title: "Naive Bayes",
-      speaker: "",
+      speaker: "Ruthwika Gajjala",
       date: "10/22/25",
       recording:
         "/",
-      slides: "/",
-      code: "/",
+      slides: "https://docs.google.com/presentation/d/1YeG88tsb8GRvWaD8qY5NQrv0mYONZo5WwYqIzHb9dxs/edit?usp=sharing",
+      code: "https://colab.research.google.com/drive/1so-IXAO7vGr1Ln--yHfSHckPnFpRnKDj?usp=sharing",
     },
     {
       title: "KNN/Clustering",
