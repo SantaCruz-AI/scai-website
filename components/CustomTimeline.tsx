@@ -45,17 +45,17 @@ const CustomTimeline = (props: any) => {
       speaker: "Ruthwika Gajjala",
       date: "10/22/25",
       recording:
-        "/",
+        "https://drive.google.com/file/d/1fODd7wML3a8DBK-GP3_9Ip_rL07Jyx5b/view?usp=sharing",
       slides: "https://docs.google.com/presentation/d/1YeG88tsb8GRvWaD8qY5NQrv0mYONZo5WwYqIzHb9dxs/edit?usp=sharing",
       code: "https://colab.research.google.com/drive/1so-IXAO7vGr1Ln--yHfSHckPnFpRnKDj?usp=sharing",
     },
     {
       title: "KNN/Clustering",
-      speaker: "",
+      speaker: "Eric Honer",
       date: "10/29/25",
-      recording: "/",
-      slides: "/",
-      code: "/",
+      recording: "https://drive.google.com/file/d/1oofOS6gQHlIbLJyib-mjEO2YLb4laGKK/view?usp=sharing",
+      slides: "https://docs.google.com/presentation/d/1VjsefNaxpfQPScibVWIZinjOQZYXy5yDuyS42UmSahw/edit?usp=sharing",
+      code: "https://colab.research.google.com/drive/1c7ydUO_IPVVOi40gcT9EQRpf6OUBNZ5j?usp=sharing",
     },
     {
       title: "Decision Trees",
