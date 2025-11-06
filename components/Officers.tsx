@@ -25,10 +25,10 @@ const Officers = (props: any) => {
           linkedin="https://www.linkedin.com/in/ruthwika-gajjala/"
         />
         <ProfileCard
-          profileImage="profilePics/Officers/dylan.jpg"
-          name="Dylan Louie"
+          profileImage="profilePics/Officers/daksh.jpg"
+          name="Daksh Shah"
           role="Instructor"
-          linkedin="https://www.linkedin.com/in/dylanlouie/"
+          linkedin="https://www.linkedin.com/in/dakshkshah/"
         />
         <ProfileCard
           profileImage="profilePics/Officers/rishika.jpeg"
@@ -43,52 +43,76 @@ const Officers = (props: any) => {
           linkedin="https://www.linkedin.com/in/ericnkimbrell/"
         />
         <ProfileCard
+          profileImage="profilePics/template_profile.png"
+          name="Eric Honer"
+          role="Instructor & SCAI Is No Limit Officer"
+          linkedin="https://www.linkedin.com/in/ehoner8/"
+        />
+        <ProfileCard
           profileImage="profilePics/Officers/aashna.jpg"
           name="Aashna Shimkhada"
           role="Head of Finance"
           linkedin="https://www.linkedin.com/in/aashna-shimkhada/"
         />{" "}
         <ProfileCard
-          profileImage="profilePics/Officers/Ananthajit_Srikanth.jpg"
-          name="Ananth Srikanth"
-          role="Marketing Director"
-          linkedin="https://www.linkedin.com/in/ananth-srikanth/"
+          profileImage="profilePics/template_profile.png"
+          name="Pujitha Samudrala"
+          role="Finance Officer"
+          linkedin="https://www.linkedin.com/in/pujitha-samudrala-434a27214/"
         />{" "}
         <ProfileCard
           profileImage="profilePics/Officers/clara.jpg"
           name="Clara Sapugay"
-          role="Marketing Officer"
+          role="Head of Marketing"
           linkedin="https://www.linkedin.com/in/clara-sapugay/"
+        />{" "}
+        <ProfileCard
+          profileImage="profilePics/Officers/mandy.jpg"
+          name="Mandy Wu"
+          role="Marketing Officer"
+          linkedin="https://www.linkedin.com/in/mandywu8/"
+        />{" "}
+        <ProfileCard
+          profileImage="profilePics/Officers/ember.jpg"
+          name="Ember Lu"
+          role="Marketing Officer"
+          linkedin="https://www.linkedin.com/in/ember-lu/"
         />{" "}
         <ProfileCard
           profileImage="profilePics/Officers/minahill.jpg"
           name="Minahill Shafi"
           role="Marketing and Finance Officer"
-          linkedin=""
-        />{" "}
-        <ProfileCard
-          profileImage="profilePics/Officers/anshul.jpg"
-          name="Anshul Kolli"
-          role="Marketing and Finance Officer"
-          linkedin="https://www.linkedin.com/in/anshul-kolli-1381a2294/"
+          linkedin="https://linkedin.com/in/minahill-shafi-356716352/"
         />{" "}
         <ProfileCard
           profileImage="profilePics/Officers/anthony.jpg"
           name="Anthony Furman"
-          role="Competitions Lead"
+          role="Competitions Manager"
           linkedin="https://www.linkedin.com/in/anthony-furman/"
         />{" "}
         <ProfileCard
-          profileImage="profilePics/Officers/ivan.jpg"
-          name='Ivan Del Rio'
+          profileImage="profilePics/template_profile.png"
+          name='Alex Brenzy'
           role="SCAI is No Limit Officer"
-          linkedin="https://www.linkedin.com/in/ivanndelrio/"
+          linkedin="/"
+        />
+        <ProfileCard
+          profileImage="profilePics/Officers/ashmita.JPG"
+          name='Ashmita Dua'
+          role="SCAI is No Limit and Finance Officer"
+          linkedin="https://linkedin.com/in/duashmita/"
         />
         <ProfileCard
           profileImage="profilePics/Officers/neha.jpg"
           name="Neha Ashwin"
           role="Webmaster"
           linkedin="https://www.linkedin.com/in/nehashwin/"
+        />{" "}
+        <ProfileCard
+          profileImage="profilePics/template_profile.png"
+          name="Varun Satishkumar"
+          role="Website Officer"
+          linkedin="https://www.linkedin.com/in/varun-satish-kumar/"
         />{" "}
       </div>
     </div>
