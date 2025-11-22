@@ -91,10 +91,10 @@ const Officers = (props: any) => {
           linkedin="https://www.linkedin.com/in/anthony-furman/"
         />{" "}
         <ProfileCard
-          profileImage="profilePics/template_profile.png"
+          profileImage="profilePics/Officers/alex.jpg"
           name='Alex Brenzy'
           role="SCAI is No Limit Officer"
-          linkedin="/"
+          linkedin="https://www.linkedin.com/in/alex-brezny-920086214"
         />
         <ProfileCard
           profileImage="profilePics/Officers/ashmita.JPG"
