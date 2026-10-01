@@ -13,108 +13,84 @@ const Officers = (props: any) => {
       </h1>
       <div className="flex flex-wrap md:gap-20 justify-center max-w-[1300px] mx-auto">
         <ProfileCard
-          profileImage="profilePics/Officers/kevin.png"
-          name="Kevin Bachelor"
-          role="President"
-          linkedin="https://www.linkedin.com/in/kevin-bachelor-585603283"
-        />{" "}
-        <ProfileCard
-          profileImage="profilePics/Officers/ruthwika.png"
-          name="Ruthwika Gajjala"
-          role="Head of Instruction"
-          linkedin="https://www.linkedin.com/in/ruthwika-gajjala/"
-        />
-        <ProfileCard
-          profileImage="profilePics/Officers/daksh.jpg"
-          name="Daksh Shah"
-          role="Instructor"
-          linkedin="https://www.linkedin.com/in/dakshkshah/"
-        />
-        <ProfileCard
-          profileImage="profilePics/Officers/rishika.jpeg"
-          name="Rishika Srinivas"
-          role="Instructor"
-          linkedin="https://www.linkedin.com/in/rishikasrinivas/"
-        />
-        <ProfileCard
-          profileImage="profilePics/Officers/eric.jpg"
-          name="Eric Kimbrell"
-          role="Instructor"
-          linkedin="https://www.linkedin.com/in/ericnkimbrell/"
-        />
-        <ProfileCard
-          profileImage="profilePics/template_profile.png"
-          name="Eric Honer"
-          role="Instructor & SCAI Is No Limit Officer"
-          linkedin="https://www.linkedin.com/in/ehoner8/"
-        />
-        <ProfileCard
-          profileImage="profilePics/Officers/aashna.jpg"
-          name="Aashna Shimkhada"
-          role="Head of Finance"
-          linkedin="https://www.linkedin.com/in/aashna-shimkhada/"
-        />{" "}
-        <ProfileCard
-          profileImage="profilePics/template_profile.png"
-          name="Pujitha Samudrala"
-          role="Finance Officer"
-          linkedin="https://www.linkedin.com/in/pujitha-samudrala-434a27214/"
-        />{" "}
-        <ProfileCard
-          profileImage="profilePics/Officers/clara.jpg"
-          name="Clara Sapugay"
-          role="Head of Marketing"
-          linkedin="https://www.linkedin.com/in/clara-sapugay/"
-        />{" "}
-        <ProfileCard
-          profileImage="profilePics/Officers/mandy.jpg"
-          name="Mandy Wu"
-          role="Marketing Officer"
-          linkedin="https://www.linkedin.com/in/mandywu8/"
-        />{" "}
-        <ProfileCard
-          profileImage="profilePics/Officers/ember.jpg"
+          profileImage="profilePics/Officers/Ember Lu.png"
           name="Ember Lu"
-          role="Marketing Officer"
+          role="Co-President"
           linkedin="https://www.linkedin.com/in/ember-lu/"
         />{" "}
         <ProfileCard
-          profileImage="profilePics/Officers/minahill.jpg"
-          name="Minahill Shafi"
-          role="Marketing and Finance Officer"
-          linkedin="https://linkedin.com/in/minahill-shafi-356716352/"
+          profileImage="profilePics/Officers/Ashmita Dua.png"
+          name="Ashmita Dua"
+          role="Co-President"
+          linkedin="https://www.linkedin.com/in/duashmita/"
+        />
+        <ProfileCard
+          profileImage="profilePics/Officers/Austin Eng.png"
+          name="Austin Eng"
+          role="Finance Officer"
+          linkedin="https://www.linkedin.com/in/austin-eng/"
+        />
+        <ProfileCard
+          profileImage="profilePics/Officers/Meika Alingog.png"
+          name="Meika Alingog"
+          role="Finance Officer and Marketing Officer"
+          linkedin="https://www.linkedin.com/in/meika-alingog-b03b57371/"
+        />
+        <ProfileCard
+          profileImage="profilePics/Officers/Clara Sapugay.png"
+          name="Clara Sapugay"
+          role="Marketing Lead"
+          linkedin="https://www.linkedin.com/in/clara-sapugay/"
+        />
+        <ProfileCard
+          profileImage="profilePics/Officers/Mahika Vohra.jpg"
+          name="Mahika Vohra"
+          role="Marketing Lead"
+          linkedin="https://www.linkedin.com/in/mahikavohra/"
+        />
+        <ProfileCard
+          profileImage="profilePics/Officers/Thanh Nguyen.png"
+          name="Thanh Nguyen"
+          role="Instruction Officer"
+          linkedin="https://www.linkedin.com/in/thanh-nguyen-a246bb216/"
         />{" "}
         <ProfileCard
-          profileImage="profilePics/Officers/anthony.jpg"
+          profileImage="profilePics/Officers/Anthony Furman.png"
           name="Anthony Furman"
-          role="Competitions Manager"
+          role="Competitions Lead"
           linkedin="https://www.linkedin.com/in/anthony-furman/"
         />{" "}
         <ProfileCard
-          profileImage="profilePics/Officers/alex.jpg"
-          name='Alex Brenzy'
-          role="SCAI is No Limit Officer"
-          linkedin="https://www.linkedin.com/in/alex-brezny-920086214"
-        />
+          profileImage="profilePics/Officers/Jaisree David Ravikumar.png"
+          name="Jaisree David Ravikumar"
+          role="Competition Lead"
+          linkedin="https://www.linkedin.com/in/jaisree-david-ravikumar-818799232/"
+        />{" "}
         <ProfileCard
-          profileImage="profilePics/Officers/ashmita.JPG"
-          name='Ashmita Dua'
-          role="SCAI is No Limit and Finance Officer"
-          linkedin="https://linkedin.com/in/duashmita/"
-        />
+          profileImage="profilePics/Officers/Aarush Reddy.png"
+          name="Aarush Reddy"
+          role="Competitions Officer"
+          linkedin="https://www.linkedin.com/in/aarush-reddy-20020629b/"
+        />{" "}
         <ProfileCard
-          profileImage="profilePics/Officers/neha.jpg"
-          name="Neha Ashwin"
+          profileImage="profilePics/Officers/Advait Sankaran.png"
+          name="Advait Sankaran"
+          role="Competitions Officer"
+          linkedin="https://www.linkedin.com/in/advsan/"
+        />{" "}
+        <ProfileCard
+          profileImage="profilePics/Officers/Krish Arora.png"
+          name="Krish Arora"
           role="Webmaster"
-          linkedin="https://www.linkedin.com/in/nehashwin/"
+          linkedin="https://www.linkedin.com/in/krish-arora1/"
         />{" "}
         <ProfileCard
-          profileImage="profilePics/Officers/varun.jpeg"
-          name="Varun Satishkumar"
-          role="Website Officer"
-          linkedin="https://www.linkedin.com/in/varun-satish-kumar/"
+          profileImage="profilePics/Officers/Riddhi Gaddamwar.png"
+          name="Riddhi Gaddamwar"
+          role="Webmaster"
+          linkedin="https://www.linkedin.com/in/riddhi-gaddamwar-3aa46a322/"
         />{" "}
-      </div>
+        </div>
     </div>
   );
 };

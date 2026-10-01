@@ -32,7 +32,7 @@ import {
   Chip,
 } from "@material-tailwind/react";
 
-const Navbar: React.FC = (props: any) => {
+const Navbar: React.FC<any> = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleNavbar = () => {
