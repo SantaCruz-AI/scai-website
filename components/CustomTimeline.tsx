@@ -13,86 +13,86 @@ const CustomTimeline = (props: any) => {
   const events = [
     {
       title: "Intro to SCAI",
-      speaker: "Kevin Bachelor",
-      date: "10/01/25",
+      speaker: "",
+      date: "09/28/26",
       recording:
-        "https://drive.google.com/file/d/1YpjeNnfPJgFBkD8F9EM5391qvu1QCz9f/view?usp=sharing",
+        "/",
       slides:
-        "https://docs.google.com/presentation/d/1ZDWSmbd80KsodTzcRCFm79HPw6MSnenzJq67kwRWieU/edit?usp=sharing",
+        "/",
       code: "",
     },
     {
       title: "Intro to AI/ML",
-      speaker: "Eric Kimbrell",
-      date: "10/8/25",
+      speaker: "",
+      date: "10/05/26",
       recording:
-        "/",
-      slides: "https://docs.google.com/presentation/d/13zBqPJhXvWE6SrrmB05N5Sn8CEITqiN9sRbxuwi1r98/edit?usp=sharing",
-      code: "/",
+        "",
+      slides: "",
+      code: "",
     },
     {
       title: "Linear Regression",
-      speaker: "Eric Honer",
-      date: "10/15/25",
+      speaker: "",
+      date: "10/12/26",
       recording:
-        "https://drive.google.com/file/d/1hUue4fqrKQv5NKbTuFIT8SJ7AuTB-NTz/view?usp=sharing",
+        "/",
       slides:
-        "https://docs.google.com/presentation/d/1onb5ca0g824b4Id-ZnHnJ3L3wmCe1_JnvyAxBAmCy18/edit?usp=sharing",
-      code: "https://colab.research.google.com/drive/1Xp-uCe0DWkSNze1NshDBGVeNUglAxd9o?usp=sharing",
-    },
-    {
-      title: "Naive Bayes",
-      speaker: "Ruthwika Gajjala",
-      date: "10/22/25",
-      recording:
-        "https://drive.google.com/file/d/1fODd7wML3a8DBK-GP3_9Ip_rL07Jyx5b/view?usp=sharing",
-      slides: "https://docs.google.com/presentation/d/1YeG88tsb8GRvWaD8qY5NQrv0mYONZo5WwYqIzHb9dxs/edit?usp=sharing",
-      code: "https://colab.research.google.com/drive/1so-IXAO7vGr1Ln--yHfSHckPnFpRnKDj?usp=sharing",
-    },
-    {
-      title: "KNN/Clustering",
-      speaker: "Eric Honer",
-      date: "10/29/25",
-      recording: "https://drive.google.com/file/d/1oofOS6gQHlIbLJyib-mjEO2YLb4laGKK/view?usp=sharing",
-      slides: "https://docs.google.com/presentation/d/1VjsefNaxpfQPScibVWIZinjOQZYXy5yDuyS42UmSahw/edit?usp=sharing",
-      code: "https://colab.research.google.com/drive/1c7ydUO_IPVVOi40gcT9EQRpf6OUBNZ5j?usp=sharing",
-    },
-    {
-      title: "Decision Trees",
-      speaker: "Daksh Shah",
-      date: "11/5/25",
-      recording: "/",
-      slides: "https://docs.google.com/presentation/d/1pIbnuKg26KMtOpCZxktWAQoSxL7lf36XtVlHG4krK3w/edit?usp=sharing",
+        "/",
       code: "/",
     },
     {
-      title: "Perceptron",
-      speaker: "Ruthwika Gajjala",
-      date: "11/12/25",
-      recording: "https://drive.google.com/file/d/1VqzsIiZsepFBDQIDX_iRpNzZymoBRIJr/view?usp=share_link",
-      slides: "https://docs.google.com/presentation/d/1DIGfCXDV_Qv9th6WNWU_t9-acdChsKSQG83agxRfC7Q/edit?usp=sharing",
-      code: "https://colab.research.google.com/drive/1Ol3zacrK7u_MLNgWsTwsOwoAb1Rh587n?usp=sharing",
+      title: "Social",
+      speaker: "",
+      date: "10/19/26",
+      recording:
+        "/",
+      slides: "/",
+      code: "/",
+    },
+    {
+      title: "KNN/Clustering",
+      speaker: "",
+      date: "10/26/26",
+      recording: "",
+      slides: "",
+      code: "",
     },
     {
       title: "Intro to Neural Networks",
       speaker: "",
-      date: "11/19/25",
+      date: "11/02/26",
       recording: "/",
-      slides: "https://docs.google.com/presentation/d/1JGFMgIRj4YNOdU0HbVDWyBLuZ0TZbqYf07-Vd6exXRI/edit?usp=sharing",
+      slides: "",
+      code: "/",
+    },
+    {
+      title: "Reinforcement Learning",
+      speaker: "",
+      date: "11/09/26",
+      recording: "",
+      slides: "",
+      code: "",
+    },
+    {
+      title: "AI Research vs AI in the Industry",
+      speaker: "",
+      date: "11/16/26",
+      recording: "/",
+      slides: "gi",
       code: "/",
     },
     {
       title: "Thanksgiving Holiday",
       speaker: "",
-      date: "11/26/25",
+      date: "11/23/26",
       recording: "/",
       slides: "/",
       code: "/",
     },
     {
-      title: "SCAI's No Limit",
+      title: "SiNL",
       speaker: "",
-      date: "12/3/25",
+      date: "11/30/26",
       recording: "/",
       slides: "/",
       code: "/",
@@ -136,7 +136,7 @@ const CustomTimeline = (props: any) => {
         Fall Schedule
       </h1>
       <p className="text-white md:text-left text-center text-xl font-semibold">
-        Wednesdays 3-4pm
+        Mondays 6-7pm
       </p>
       <p className="text-white md:text-left text-center text-lg ">
         Location: E2-180
